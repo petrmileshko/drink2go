@@ -1,13 +1,153 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>DRINK GO</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
-  </head>
-  <body class="page__body">
-    <header class="header">Шапка</header>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>DRINK GO</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="./fonts/montserrat-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/montserrat-medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/montserrat-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body class="page__body">
+  <header class="page__header center-fixed" id="top">
+
+    <nav class="navigation">
+      <div class="navigation__wrapper">
+        <span class="logo">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/logo/header-desktop.svg">
+            <source media="(min-width: 768px)" srcset="./img/logo/header-tablet.svg">
+            <img class="logo__image" src="./img/logo/header-mobile.svg" alt="Логотип Drink Go">
+          </picture>
+        </span>
+
+        <button class="navigation__button button burger burger--nojs" type="button">
+          <span class="burger__icon">
+            <span class="button__text text visually-hidden">Меню</span>
+          </span>
+        </button>
+      </div>
+
+      <ul class="navigation__menu menu menu--nojs">
+        <li class="menu__item"><span class="menu__link menu__link--current text">Главная</span></li>
+        <li class="menu__item"><a class="menu__link text" href="#">Каталог</a></li>
+        <li class="menu__item"><a class="menu__link text" href="#">Корзина</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page__main index">
+    <header class="index__header hero center-fixed">
+      <div class="hero__wrapper center-fixed">
+        <h2 class="hero__title title">Заголовок первого блока (может быть заголовком страницы)</h2>
+        <p class="hero__slogan text">Призыв к действию</p>
+        <a class="hero__action button button--border" href="#">
+          <span class="button__text">Кнопка действия</span>
+        </a>
+      </div>
+    </header>
+
+
+    <footer class="index__footer contacts center-fixed">
+      <h2 class="contacts__title title">Контакты</h2>
+      <div class="contacts__wrapper">
+        <p class="contacts__heading heading">Остались вопросы? Свяжитесь с нами!</p>
+        <p class="contacts__data contacts__data--phone">
+          Звоните:
+          <a class="contacts__link" href="tel:+78125556666">+7&nbsp;(812)&nbsp;555-66-66</a>
+        </p>
+        <p class="contacts__data contacts__data--mail">
+          Пишите:
+          <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </p>
+        <address class="contacts__data contacts__data--address">
+          Приезжайте в гости:
+          <span class="visually-hidden">г. Санкт-Петербург </span><span class="contacts__details">ул. Большая
+            Конюшенная, 19/8</span>
+        </address>
+      </div>
+      <div class="contacts__map map">
+        <figure class="map__images map__images--nojs">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="./img/map/desktop.webp 1x, ./img/map/desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)"
+              srcset="./img/map/tablet@2x.webp 1x, ./img/map/tablet@2x.webp 2x">
+            <source type="image/webp" srcset="./img/map/mobile.webp 1x, ./img/map/mobile@2x.webp 2x">
+            <source media="(min-width: 1200px)" srcset="./img/map/descktop.jpg 1x, ./img/map/descktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="./img/map/tablet.jpg 1x, ./img/map/tablet@2x.jpg 2x">
+            <img class="map__image" src="./img/map/mobile.jpg" srcset="./img/map/mobile@2x.jpg 2x"
+              alt="Карта местоположения в формате jpg" loading="lazy" decoding="async">
+          </picture>
+          <figcaption class="map__marker">
+            <span class="visually-hidden">Карта с меткой на адрес: г. Санкт-Петербург, ул. Большая Конюшенная,
+              19/8</span>
+          </figcaption>
+        </figure>
+        <iframe class="map__yandex map__yandex--nojs lazy" title="Местоположение офиса"
+          data-src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab3c55d4b094121533920a7032d7930ffd94e588af5804c4e5c00a3bfe0378c56&amp;source=constructor"></iframe>
+      </div>
+    </footer>
+  </main>
+
+  <footer class="page__footer center-fixed">
+    <a class="logo" href="#top">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="./img/logo/footer-desktop.svg">
+        <source media="(min-width: 768px)" srcset="./img/logo/footer-tablet.svg">
+        <img class="logo__image" src="./img/logo/footer-mobile.svg" alt="Логотип Pink">
+      </picture>
+    </a>
+
+    <p class="copyright">
+      &copy;Site 2024
+    </p>
+
+    <ul class="menu menu--opened">
+      <li class="menu__item"><a class="menu__link text" rel="privacy-policy" href="#privacy-policy">Политика
+          конфиденциальности</a></li>
+    </ul>
+
+    <ul class="socials">
+      <li class="socials__item">
+        <a class="socials__link" href="https://twitter.com/htmlacademy_ru">
+          <span class="visually-hidden">Twitter</span>
+          <svg width="18" height="15" viewBox="0 0 18 15">
+            <use xlink:href="./img/sprite.svg#ico-twitter"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link" href="https://www.facebook.com">
+          <span class="visually-hidden">Facebook</span>
+          <svg width="9" height="18" viewBox="0 0 9 18">
+            <use xlink:href="./img/sprite.svg#ico-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link" href="https://www.youtube.com/user/htmlacademyru">
+          <span class="visually-hidden">Youtube</span>
+          <svg width="15" height="13" viewBox="0 0 15 13">
+            <use xlink:href="./img/sprite.svg#ico-youtube"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <a class="developers text" href="https://htmlacademy.ru/intensive/adaptive">
+      Разработано<span class="visually-hidden"> в HTML Academy</span>
+      <svg class="developers__image" width="27" height="34" viewBox="0 0 27 34">
+        <use xlink:href="./img/sprite.svg#ico-dev"></use>
+      </svg>
+    </a>
+  </footer>
+
+  <script src="scripts/index.js"></script>
+</body>
+
 </html>

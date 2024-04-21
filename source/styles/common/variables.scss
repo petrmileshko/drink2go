@@ -1,1 +1,31 @@
 /* здесь используйте глобальные переменные */
+$font-primary: "Montserrat", "Verdana", sans-serif;
+$font-regular: 400;
+$font-bold: 700;
+
+//Размеры шрифтов
+$font-size-mobile: 12px;
+$line-height-mobile: 14px;
+$font-size-tablet: 14px;
+$line-height-tablet: 16px;
+$font-size-desktop: 16px;
+$line-height-desktop: 18px;
+
+//Экраны / брэйкпоинты
+$width-min: 320px;
+$min-tablet: 768px;
+$min-desktop: 1440px;
+$max-mobile: (
+  $min-tablet - 1
+);
+$max-tablet: (
+  $min-desktop - 1
+);
+
+//горизонтальные отступы от краев экрана
+$padding-mobile: 20px;
+$padding-tablet: 20px;
+$padding-desktop: 40px;
+
+$text-primary: #000000;
+$bg-primary: #ffffff;
