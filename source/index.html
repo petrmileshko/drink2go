@@ -65,28 +65,27 @@
       </div>
     </header>
 
-    <footer class="index__footer contacts center-fixed">
-      <h2 class="contacts__title title">Контакты</h2>
+    <footer class="index__footer contacts">
       <div class="contacts__map map">
         <figure class="map__images map__images--nojs">
           <picture>
-            <source type="image/webp" media="(min-width: 1200px)"
-              srcset="./img/map/desktop.webp 1x, ./img/map/desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 660px)"
-              srcset="./img/map/tablet@2x.webp 1x, ./img/map/tablet@2x.webp 2x">
-            <source type="image/webp" srcset="./img/map/mobile.webp 1x, ./img/map/mobile@2x.webp 2x">
-            <source media="(min-width: 1200px)" srcset="./img/map/descktop.jpg 1x, ./img/map/descktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="./img/map/tablet.jpg 1x, ./img/map/tablet@2x.jpg 2x">
-            <img class="map__image" src="./img/map/mobile.jpg" srcset="./img/map/mobile@2x.jpg 2x"
-              alt="Карта местоположения в формате jpg" loading="lazy" decoding="async">
+            <source type="image/webp" media="(min-width: 1440px)"
+              srcset="./images/map/descktop@1x.webp 1x, ./images/map/descktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="./images/map/tablet@1x.webp 1x, ./images/map/tablet@2x.webp 2x">
+            <source type="image/webp" srcset="./images/map/mobile@1x.webp 1x, ./images/map/mobile@2x.webp 2x">
+            <source media="(min-width: 1440px)"
+              srcset="./images/map/descktop@1x.jpg 1x, ./images/map/descktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="./images/map/tablet@1x.jpg 1x, ./images/map/tablet@2x.jpg 2x">
+            <img class="map__image" src="./images/map/mobile@1x.jpg" srcset="./images/map/mobile@2x.jpg 2x"
+              alt="Карта местоположения" loading="lazy" decoding="async">
           </picture>
           <figcaption class="map__marker">
-            <span class="visually-hidden">Карта с меткой на адрес: г. Санкт-Петербург, ул. Большая Конюшенная,
-              19/8</span>
+            Санкт-Петербург, набережная реки Карповки, дом 5
           </figcaption>
         </figure>
         <iframe class="map__yandex map__yandex--nojs lazy" title="Местоположение офиса"
-          data-src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab3c55d4b094121533920a7032d7930ffd94e588af5804c4e5c00a3bfe0378c56&amp;source=constructor"></iframe>
+          data-src="https://yandex.ru/maps/?um=constructor%3Ad552a25fa02716426690142f84c51e5ce440596e35b54d00bb8bfb494fa51c2a&amp;source=constructorStatic"></iframe>
       </div>
     </footer>
   </main>
@@ -97,7 +96,7 @@
         <picture>
           <source media="(min-width: 1440px)" srcset="./images/logo/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="./images/logo/logo-tablet.svg">
-          <img class="logo__image" src="./images/logo/logo-mobile.svg" alt="Логотип Drink Go">
+          <img class="logo__image logo__image--footer" src="./images/logo/logo-tablet.svg" alt="Логотип Drink Go">
         </picture>
         <span class="logo__text">Интернет-магазин кофейных напитков</span>
       </a>
@@ -111,8 +110,8 @@
             </svg>
           </a>
         </li>
-        <li class="socials__item">
-          <a class="socials__link" href="#">
+        <li class="socials__item socials__item--pinterest">
+          <a class="socials__link socials__link--pinterest" href="#">
             <span class="visually-hidden">Pinterest</span>
             <svg width="22" height="22" viewBox="0 0 22 22">
               <use xlink:href="./icons/stack.svg#ico-pinterest"></use>
@@ -167,7 +166,8 @@
       <h2 class="footer__heading">Контакты</h2>
       <ul class="footer__menu footer-menu">
         <li class="footer-menu__item">
-          <a class="footer-menu__link footer-menu__link--location text" href="#">Санкт-Петербург, набережная реки Карповки, дом 5</a>
+          <a class="footer-menu__link footer-menu__link--location text" href="#">Санкт-Петербург, набережная реки
+            Карповки, дом 5</a>
         </li>
         <li class="footer-menu__item">
           <a class="footer-menu__link footer-menu__link--phone text" href="tel:+79999999999">+7 (999) 999-99-99</a>

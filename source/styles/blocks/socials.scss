@@ -4,7 +4,12 @@
 }
 
 .socials__item {
-  padding: 20px;
+  display: flex;
+  padding: 10px;
+
+  &--pinterest {
+    padding: 8px 9px;
+  }
 
   &:not(:last-of-type) {
     margin-right: 20px;
@@ -12,13 +17,16 @@
 }
 
 .socials__link {
+  display: flex;
   width: 20px;
   height: 20px;
 
+  &--pinterest {
+    width: 22px;
+    height: 22px;
+  }
+
   svg {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
     color: $base-gray;
   }
 }
