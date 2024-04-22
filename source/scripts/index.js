@@ -20,4 +20,7 @@ menuMobile({
 }, {
   element: '.burger__icon',
   activation: 'burger__icon--opened'
+}, {
+  element: 'menu__link',
+  activation: 'menu__link--current'
 })();
