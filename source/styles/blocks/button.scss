@@ -8,7 +8,6 @@
   text-decoration: none;
   text-align: center;
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
 
   &:not(.burger) {
     background-color: $base-primary;
@@ -32,6 +31,7 @@
   display: block;
   margin: 0;
   padding: $btn-paddings-mobile;
+  background-color: $alt-primary-lighter;
 
   @media (min-width: $min-tablet) {
     padding: $btn-paddings-tablet;

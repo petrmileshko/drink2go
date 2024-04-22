@@ -20,7 +20,7 @@
           <source media="(min-width: 768px)" srcset="./images/logo/logo-tablet.svg">
           <img class="logo__image" src="./images/logo/logo-mobile.svg" alt="Логотип Drink Go">
         </picture>
-        <span class="logo__text">Интернет-магазин<br>кофейных напитков</span>
+        <span class="logo__text text">Интернет-магазин<br>кофейных напитков</span>
       </span>
 
       <button class="navigation__button button burger burger--nojs" type="button">
@@ -54,15 +54,17 @@
   </header>
 
   <main class="page__main index">
+
     <header class="index__header hero center-fixed">
       <div class="hero__wrapper center-fixed">
         <h2 class="hero__title title">Заголовок первого блока (может быть заголовком страницы)</h2>
         <p class="hero__slogan text">Призыв к действию</p>
-        <a class="hero__action button button--border" href="#">
+        <a class="hero__action button" href="#">
           <span class="button__text">Кнопка действия</span>
         </a>
       </div>
     </header>
+
     <footer class="index__footer contacts center-fixed">
       <h2 class="contacts__title title">Контакты</h2>
       <div class="contacts__map map">
@@ -90,44 +92,49 @@
   </main>
 
   <footer class="page__footer footer center-fixed">
-    <a class="logo" href="#top">
-      <picture>
-        <source media="(min-width: 1440px)" srcset="./images/logo/logo-desktop.svg">
-        <source media="(min-width: 768px)" srcset="./images/logo/logo-tablet.svg">
-        <img class="logo__image" src="./images/logo/logo-mobile.svg" alt="Логотип Drink Go">
-      </picture>
-    </a>
+    <div class="footer__wrapper">
+      <a class="logo" href="#top">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./images/logo/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="./images/logo/logo-tablet.svg">
+          <img class="logo__image" src="./images/logo/logo-mobile.svg" alt="Логотип Drink Go">
+        </picture>
+        <span class="logo__text">Интернет-магазин кофейных напитков</span>
+      </a>
+
+      <ul class="socials">
+        <li class="socials__item">
+          <a class="socials__link" href="https://www.vk.ru/htmlacademy/">
+            <span class="visually-hidden">ВКонтакте</span>
+            <svg width="20" height="20" viewBox="0 0 20 20">
+              <use xlink:href="./icons/stack.svg#ico-vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="#">
+            <span class="visually-hidden">Pinterest</span>
+            <svg width="22" height="22" viewBox="0 0 22 2">
+              <use xlink:href="./icons/stack.svg#ico-pinterest"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="#">
+            <span class="visually-hidden">Однокласники</span>
+            <svg width="20" height="20" viewBox="0 0 20 20">
+              <use xlink:href="./icons/stack.svg#ico-ok"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
 
     <ul class="footer-menu">
-      <li class="footer-menu__item"><a class="footer-menu__link text" rel="privacy-policy" href="#privacy-policy">Политика
+      <li class="footer-menu__item"><a class="footer-menu__link text" rel="privacy-policy"
+          href="#privacy-policy">Политика
           конфиденциальности</a></li>
-    </ul>
-
-    <ul class="socials">
-      <li class="socials__item">
-        <a class="socials__link" href="https://twitter.com/htmlacademy_ru">
-          <span class="visually-hidden">Twitter</span>
-          <svg width="18" height="15" viewBox="0 0 18 15">
-            <use xlink:href="./img/sprite.svg#ico-twitter"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="socials__item">
-        <a class="socials__link" href="https://www.facebook.com">
-          <span class="visually-hidden">Facebook</span>
-          <svg width="9" height="18" viewBox="0 0 9 18">
-            <use xlink:href="./img/sprite.svg#ico-facebook"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="socials__item">
-        <a class="socials__link" href="https://www.youtube.com/user/htmlacademyru">
-          <span class="visually-hidden">Youtube</span>
-          <svg width="15" height="13" viewBox="0 0 15 13">
-            <use xlink:href="./img/sprite.svg#ico-youtube"></use>
-          </svg>
-        </a>
-      </li>
     </ul>
 
     <a class="developers text" href="https://htmlacademy.ru/intensive/adaptive">

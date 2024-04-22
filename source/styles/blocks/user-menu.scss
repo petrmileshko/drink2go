@@ -54,4 +54,8 @@
   &:active {
     color: $alt-primary-darker;
   }
+
+  @media (min-width: $min-desktop) {
+    margin-right: 8px;
+  }
 }
