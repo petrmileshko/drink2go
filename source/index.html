@@ -16,26 +16,41 @@
   <header class="page__header center-fixed" id="top">
 
     <nav class="navigation">
-      <div class="navigation__wrapper">
-        <span class="logo">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="./img/logo/header-desktop.svg">
-            <source media="(min-width: 768px)" srcset="./img/logo/header-tablet.svg">
-            <img class="logo__image" src="./img/logo/header-mobile.svg" alt="Логотип Drink Go">
-          </picture>
-        </span>
+      <span class="navigation__logo logo">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./images/logo/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="./images/logo/logo-tablet.svg">
+          <img class="logo__image" src="./images/logo/logo-mobile.svg" alt="Логотип Drink Go">
+        </picture>
+        <span class="logo__text">Интернет-магазин<br>кофейных напитков</span>
+      </span>
 
-        <button class="navigation__button button burger burger--nojs" type="button">
-          <span class="burger__icon">
-            <span class="button__text text visually-hidden">Меню</span>
-          </span>
-        </button>
-      </div>
+      <button class="navigation__button button burger burger--nojs" type="button">
+        <span class="burger__icon">
+          <span class="button__text text visually-hidden">Меню</span>
+        </span>
+      </button>
 
       <ul class="navigation__menu menu menu--nojs">
         <li class="menu__item"><span class="menu__link menu__link--current text">Главная</span></li>
         <li class="menu__item"><a class="menu__link text" href="#">Каталог</a></li>
-        <li class="menu__item"><a class="menu__link text" href="#">Корзина</a></li>
+        <li class="menu__item"><a class="menu__link text" href="#">Доставка</a></li>
+        <li class="menu__item"><a class="menu__link text" href="#">О нас</a></li>
+      </ul>
+
+      <ul class="navigation__menu user-menu">
+        <li class="user-menu__item"><a class="user-menu__link text" href="#">
+            <svg class="user-menu__icon" width="16" height="16" viewBox="0 0 16 16">
+              <use xlink:href="./icons/stack.svg#ico-login"></use>
+            </svg>
+            <span> Войти</span>
+          </a></li>
+        <li class="user-menu__item"><a class="user-menu__link text" href="#">
+            <svg class="user-menu__icon" width="16" height="16" viewBox="0 0 16 16">
+              <use xlink:href="./icons/stack.svg#ico-cart"></use>
+            </svg>
+            <span> Корзина</span>
+          </a></li>
       </ul>
     </nav>
   </header>
@@ -54,22 +69,6 @@
 
     <footer class="index__footer contacts center-fixed">
       <h2 class="contacts__title title">Контакты</h2>
-      <div class="contacts__wrapper">
-        <p class="contacts__heading heading">Остались вопросы? Свяжитесь с нами!</p>
-        <p class="contacts__data contacts__data--phone">
-          Звоните:
-          <a class="contacts__link" href="tel:+78125556666">+7&nbsp;(812)&nbsp;555-66-66</a>
-        </p>
-        <p class="contacts__data contacts__data--mail">
-          Пишите:
-          <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </p>
-        <address class="contacts__data contacts__data--address">
-          Приезжайте в гости:
-          <span class="visually-hidden">г. Санкт-Петербург </span><span class="contacts__details">ул. Большая
-            Конюшенная, 19/8</span>
-        </address>
-      </div>
       <div class="contacts__map map">
         <figure class="map__images map__images--nojs">
           <picture>
@@ -97,15 +96,11 @@
   <footer class="page__footer center-fixed">
     <a class="logo" href="#top">
       <picture>
-        <source media="(min-width: 1200px)" srcset="./img/logo/footer-desktop.svg">
-        <source media="(min-width: 768px)" srcset="./img/logo/footer-tablet.svg">
-        <img class="logo__image" src="./img/logo/footer-mobile.svg" alt="Логотип Pink">
+        <source media="(min-width: 1440px)" srcset="./images/logo/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="./images/logo/logo-tablet.svg">
+        <img class="logo__image" src="./images/logo/logo-mobile.svg" alt="Логотип Drink Go">
       </picture>
     </a>
-
-    <p class="copyright">
-      &copy;Site 2024
-    </p>
 
     <ul class="menu menu--opened">
       <li class="menu__item"><a class="menu__link text" rel="privacy-policy" href="#privacy-policy">Политика
@@ -140,9 +135,9 @@
     </ul>
 
     <a class="developers text" href="https://htmlacademy.ru/intensive/adaptive">
-      Разработано<span class="visually-hidden"> в HTML Academy</span>
-      <svg class="developers__image" width="27" height="34" viewBox="0 0 27 34">
-        <use xlink:href="./img/sprite.svg#ico-dev"></use>
+      Разработано в HTML Academy
+      <svg class="developers__image" width="12" height="16" viewBox="0 0 12 16">
+        <use xlink:href="./icons/stack.svg#ico-dev"></use>
       </svg>
     </a>
   </footer>

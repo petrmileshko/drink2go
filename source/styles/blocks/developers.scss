@@ -1,0 +1,29 @@
+.developers {
+  display: flex;
+  align-items: center;
+  min-width: 206px;
+  font-size: $font-size-mobile;
+  line-height: $line-height-mobile;
+
+  @media (min-width: $min-tablet) {
+    margin-top: 8px;
+  }
+
+  @media (min-width: $min-desktop) {
+    min-width: 155px;
+    font-size: 18px;
+    margin-top: 14px;
+  }
+}
+
+.developers__image {
+  color: $base-gray;
+
+  &:hover {
+    color: $base-primary;
+  }
+
+  &:active {
+    color: $alt-primary-darker;
+  }
+}

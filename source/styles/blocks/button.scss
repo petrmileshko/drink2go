@@ -1,0 +1,40 @@
+.button {
+  width: fit-content;
+  padding: 0;
+  font: inherit;
+  color: $base-white;
+  background: none;
+  background-color: $base-primary;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+
+  &:hover:not(.burger) {
+    background-color: $alt-primary-lighter;
+  }
+
+  &:active:not(.burger) {
+    background-color: $alt-primary-darker;
+    opacity: 0.5;
+  }
+
+  &:focus:not(:active):not(.burger) {
+    background-color: $alt-primary-lighter;
+  }
+}
+
+.button__text {
+  display: block;
+  margin: 0;
+  padding: $btn-paddings-mobile;
+
+  @media (min-width: $min-tablet) {
+    padding: $btn-paddings-tablet;
+  }
+
+  @media (min-width: $min-desktop) {
+    padding: $btn-paddings-desktop;
+  }
+}

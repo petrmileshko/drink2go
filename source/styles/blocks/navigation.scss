@@ -1,0 +1,27 @@
+.navigation {
+
+
+  @media (min-width: $min-tablet) {
+    display: grid;
+    grid-template-columns: 170px 460px 1fr;
+  }
+
+  @media (min-width: $min-desktop) {
+    grid-template-columns: 518px 621px 1fr;
+  }
+}
+
+.navigation__logo {
+  margin: 0;
+}
+
+.navigation__button {
+  margin-left: auto;
+}
+
+.navigation__menu {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+}

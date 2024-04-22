@@ -6,7 +6,7 @@ $font-bold: 700;
 
 //Размеры шрифтов
 $font-size-mobile: 12px;
-$line-height-mobile: 14px;
+$line-height-mobile: 16px;
 $font-size-tablet: 14px;
 $line-height-tablet: 16px;
 $font-size-desktop: 16px;
@@ -28,5 +28,29 @@ $padding-mobile: 20px;
 $padding-tablet: 20px;
 $padding-desktop: 40px;
 
-$text-primary: #000000;
+$text-primary: #333333;
 $bg-primary: #ffffff;
+
+//Цвета
+$base-white: #ffffff;
+$base-black: #333333;
+$base-gray: #bdbdbd;
+$base-primary: #7859cf;
+$base-secondary: #f0ebff;
+$alt-primary-darker: #593cac;
+$alt-primary-lighter: #9070ec;;
+
+//Меню хедер
+$menu-paddings-mobile: 20px 0;
+$menu-paddings-tablet: 32px 20px;
+
+//настройка кнопок
+$btn-border-thickness: 1px;
+$btn-paddings-mobile: 8px 0;
+$btn-paddings-tablet: 8px 0;
+$btn-paddings-desktop: 8px 0;
+
+//настройка бургера
+$burger-width: 16px;
+$burger-height: 12px;
+$burger-thickness: 1.5px;
