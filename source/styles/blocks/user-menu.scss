@@ -5,6 +5,7 @@
 }
 
 .user-menu__item {
+  display: flex;
 
   @media (min-width: $min-desktop) {
     &:not(:last-of-type) {

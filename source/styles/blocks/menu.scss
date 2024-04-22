@@ -11,9 +11,10 @@
   &--opened {
     display: flex;
     flex-direction: column;
+    width: 100vw;
   }
 
-  @media (min-width: $min-desktop) {
+  @media (min-width: $min-tablet) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -39,6 +40,8 @@
   display: block;
   padding: $menu-paddings-mobile;
   color: $text-primary;
+  text-transform: uppercase;
+  text-align: center;
 
   &:hover {
     color: $base-primary;
@@ -54,6 +57,8 @@
   }
 
   @media (min-width: $min-tablet) {
+    padding: $menu-paddings-tablet;
+
     &--current {
       color: $base-primary;
     }
@@ -67,9 +72,5 @@
       background-color: $base-primary;
       content: "";
     }
-  }
-
-  @media (min-width: $min-tablet) {
-    padding: $menu-paddings-tablet;
   }
 }

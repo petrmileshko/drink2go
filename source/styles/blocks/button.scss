@@ -4,12 +4,15 @@
   font: inherit;
   color: $base-white;
   background: none;
-  background-color: $base-primary;
   border: none;
   text-decoration: none;
   text-align: center;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
+
+  &:not(.burger) {
+    background-color: $base-primary;
+  }
 
   &:hover:not(.burger) {
     background-color: $alt-primary-lighter;

@@ -24,7 +24,7 @@ $max-tablet: (
 );
 
 //горизонтальные отступы от краев экрана
-$padding-mobile: 20px;
+$padding-mobile: 0px;
 $padding-tablet: 20px;
 $padding-desktop: 40px;
 
@@ -41,7 +41,7 @@ $alt-primary-darker: #593cac;
 $alt-primary-lighter: #9070ec;;
 
 //Меню хедер
-$menu-paddings-mobile: 20px 0;
+$menu-paddings-mobile: 22px;
 $menu-paddings-tablet: 32px 20px;
 
 //настройка кнопок
@@ -52,5 +52,5 @@ $btn-paddings-desktop: 8px 0;
 
 //настройка бургера
 $burger-width: 16px;
-$burger-height: 12px;
+$burger-height: 16px;
 $burger-thickness: 1.5px;

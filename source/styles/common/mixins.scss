@@ -6,7 +6,7 @@
 
 @mixin burger_cross($height) {
   top: 0;
-  left: calc($height / 2);
+  left: 0;
   width: $height;
 }
 

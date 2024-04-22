@@ -2,8 +2,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: $burger-width;
-  height: $burger-height;
   padding: 22px;
   cursor: pointer;
 
@@ -11,13 +9,13 @@
     display: none;
   }
 
-  @media (min-width: $min-desktop) {
+  @media (min-width: $min-tablet) {
     display: none;
   }
 
-  &:active {
-    background-color: $base-secondary;
-  }
+  // &:active {
+  //   background-color: $base-secondary;
+  // }
 }
 
 .burger__icon {
@@ -39,15 +37,15 @@
     background-color: $base-black;
     content: "";
     transform: rotateZ(0);
-    transition: 0.4s ease all;
+    z-index: 3;
   }
 
   &::before {
-    top: -10px;
+    top: -7px;
   }
 
   &::after {
-    bottom: -10px;
+    bottom: -7px;
   }
 
   &--opened::before {

@@ -1,8 +1,9 @@
 .navigation {
-
+  display: grid;
+  grid-template-columns: 140px 1fr 1fr;
+  width: 100%;
 
   @media (min-width: $min-tablet) {
-    display: grid;
     grid-template-columns: 170px 460px 1fr;
   }
 
@@ -16,7 +17,13 @@
 }
 
 .navigation__button {
-  margin-left: auto;
+  grid-column: 3 / 4;
+  grid-row: 1 / 1;
+
+  @media (min-width: $min-tablet) {
+    grid-column: initial;
+    grid-row: initial;
+  }
 }
 
 .navigation__menu {
@@ -24,4 +31,13 @@
   margin: 0;
   padding: 0;
 
+  &--user {
+    grid-column: 2 / 3;
+    grid-row: 1 / 1;
+
+    @media (min-width: $min-tablet) {
+      grid-column: initial;
+      grid-row: initial;
+    }
+  }
 }
