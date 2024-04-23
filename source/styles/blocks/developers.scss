@@ -4,6 +4,7 @@
   min-width: 206px;
   font-size: $font-size-mobile;
   line-height: $line-height-mobile;
+  color: $base-gray;
 
   @media (min-width: $min-tablet) {
     margin-top: 8px;
@@ -14,6 +15,10 @@
     font-size: 18px;
     margin-top: 14px;
   }
+}
+
+.developers__message {
+  margin-right: 4px;
 }
 
 .developers__image {

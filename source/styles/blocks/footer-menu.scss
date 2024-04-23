@@ -3,3 +3,55 @@
   flex-direction: column;
   list-style-type: none;
 }
+
+.footer__heading {
+  margin: 0 0 12px 0;
+  color: $base-primary;
+}
+
+.footer-menu__link {
+  display: block;
+  padding: 8px;
+
+  &:not(.footer-menu__link--location):not(.footer-menu__link--phone) {
+    text-transform: uppercase;
+  }
+
+  &:hover {
+    color: $alt-primary-lighter;
+  }
+
+  &:active:not(.menu__link--current) {
+    color: $alt-primary-darker;
+  }
+
+  &:focus:not(:active) {
+    border: none;
+    color: $alt-primary-lighter;
+  }
+
+  &::before {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    display: block;
+    width: 13px;
+    height: 16px;
+    content: "";
+  }
+
+  &--location,
+  &--phone {
+    position: relative;
+    display: flex;
+    padding-left: 19px;
+    color: inherit;
+  }
+  &--location::before {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none'%3e%3cpath fill='none' d='M0 0h13v16H0z'/%3e%3cpath fill='%237859CF' fill-rule='evenodd' d='M11.8 6.5c0 2.33-1.37 4.41-2.92 6.01a15.9 15.9 0 0 1-2.38 2.04c-.1-.06-.2-.14-.3-.22a15.9 15.9 0 0 1-2.09-1.82c-1.55-1.6-2.92-3.68-2.92-6.01a5.31 5.31 0 0 1 10.61 0Zm1.2 0c0 5.58-6.5 9.5-6.5 9.5S0 12.08 0 6.5a6.5 6.5 0 1 1 13 0Zm-4.2 0a2.3 2.3 0 1 1-4.6 0 2.3 2.3 0 0 1 4.6 0Zm1.2 0a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z'/%3e%3c/svg%3e");
+  }
+
+  &--phone::before {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none'%3e%3cpath fill='none' d='M0 0h13v16H0z'/%3e%3cpath fill='%237859CF' fill-rule='evenodd' d='M1.47 1.49C.4 2.09-.18 3.23.04 4.31L.4 6.09c.93 3.12 2.5 5.77 4.82 8.11l1.41 1.19c.86.72 2.17.81 3.24.21l2.23-1.25c.87-.49 1.16-1.54.62-2.26l-1.93-2.61c-.52-.7-1.59-.82-2.37-.26l-1.37.99a5.22 5.22 0 0 1-2.18-3.66l1.57-.66c.89-.38 1.32-1.34.96-2.12L6.03.84C5.65.03 4.57-.25 3.7.24L1.47 1.49Zm-.19 2.52c-.12-.59.19-1.21.78-1.54l2.23-1.25c.22-.12.49-.05.58.15L6.24 4.3c.09.2-.02.44-.24.53L3.57 5.86l.01.41a6.27 6.27 0 0 0 3.07 5.16l.36.22 2.13-1.53c.2-.14.47-.11.6.07l1.93 2.61c.13.18.06.44-.16.56l-2.23 1.25c-.58.33-1.3.28-1.76-.11l-1.41-1.19a20.89 20.89 0 0 1-4.47-7.52l-.36-1.78Z'/%3e%3c/svg%3e");
+  }
+}

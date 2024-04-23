@@ -3,8 +3,24 @@
   flex-direction: column;
 }
 
+.footer__section {
+  position: relative;
+  padding: 20px 0;
+
+  &::before {
+    position: absolute;
+    width: 100vw;
+    height: 1px;
+    top: 0;
+    left: calc(50% - 50vw);
+    background-color: $base-secondary;
+    content: "";
+  }
+}
+
 .footer__wrapper {
   display: flex;
+  padding: 22px 0;
 }
 
 .footer__menu {
