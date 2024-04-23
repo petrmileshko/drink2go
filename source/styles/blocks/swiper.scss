@@ -1,0 +1,12 @@
+.swiper {
+  height: auto;
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+
+    @media (min-width: $min-desktop) {
+      display: block;
+    }
+  }
+}
