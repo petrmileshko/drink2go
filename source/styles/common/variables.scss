@@ -2,6 +2,7 @@
 $font-primary: "Montserrat", "Verdana", sans-serif;
 $font-regular: 400;
 $font-medium: 500;
+$font-semi: 600;
 $font-bold: 700;
 
 //Размеры шрифтов
@@ -11,6 +12,12 @@ $font-size-tablet: 14px;
 $line-height-tablet: 16px;
 $font-size-desktop: 16px;
 $line-height-desktop: 18px;
+$title-mobile: 36px;
+$title-line-height-mobile: 48px;
+$title-tablet: 56px;
+$title-line-height-tablet: 80px;
+$title-desktop: 50px;
+$title-line-height-desktop: 48px;
 
 //Экраны / брэйкпоинты
 $width-min: 320px;
@@ -38,7 +45,11 @@ $base-gray: #bdbdbd;
 $base-primary: #7859cf;
 $base-secondary: #f0ebff;
 $alt-primary-darker: #593cac;
-$alt-primary-lighter: #9070ec;;
+$alt-primary-lighter: #9070ec;
+$bg-flat-white: #f3ebe1;
+$bg-flat-white: #f3ebe1;
+$bg-lavender-latte: #eae6fc;
+$bg-espresso: #e5e6e8;
 
 //Меню хедер
 $menu-paddings-mobile: 22px;

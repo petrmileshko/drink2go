@@ -24,3 +24,14 @@ menuMobile({
   element: 'menu__link',
   activation: 'menu__link--current'
 })();
+
+const swiper = new Swiper(".promo__slider", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});

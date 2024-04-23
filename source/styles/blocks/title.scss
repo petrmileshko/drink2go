@@ -1,0 +1,17 @@
+.title {
+  padding: 0;
+  font-size: $title-mobile;
+  font-weight: $font-bold;
+  line-height: $title-line-height-mobile;
+  text-align: center;
+
+  @media (min-width: $min-tablet) {
+    font-size: $title-tablet;
+    line-height: $title-line-height-tablet;
+  }
+
+  @media (min-width: $min-desktop) {
+    font-size: $title-desktop;
+    line-height: $title-line-height-desktop;
+  }
+}
