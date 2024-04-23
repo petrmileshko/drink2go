@@ -18,3 +18,9 @@
   height: 100%;
   object-fit: cover;
 }
+
+.swiper-pagination {
+  @media (max-width: $max-tablet) {
+    display: none;
+  }
+}

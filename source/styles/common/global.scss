@@ -10,3 +10,23 @@ img {
   height: auto;
   object-fit: cover;
 }
+
+:root {
+  --swiper-navigation-size: 20px;
+  --swiper-navigation-top-offset: 50%;
+  --swiper-navigation-sides-offset: 4px;
+  --swiper-navigation-color: #{$base-primary};
+
+  @media (min-width: $min-tablet) {
+    --swiper-navigation-sides-offset: 30px;
+    --swiper-navigation-top-offset: 40%;
+  }
+
+  @media (min-width: $min-desktop) {
+    --swiper-pagination-bullet-border-radius: 0;
+    --swiper-pagination-bullet-horizontal-gap: 8px;
+    --swiper-pagination-bullet-width: 60px;
+    --swiper-pagination-bullet-height: 4px;
+    --swiper-pagination-bottom: 70px;
+  }
+}
