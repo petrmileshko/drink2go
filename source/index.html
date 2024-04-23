@@ -8,6 +8,7 @@
   <link rel="preload" href="./fonts/montserrat-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./fonts/montserrat-medium.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./fonts/montserrat-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./vendor/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
@@ -55,13 +56,21 @@
 
   <main class="page__main index">
 
-    <header class="index__header hero center-fixed">
-      <div class="hero__wrapper center-fixed">
-        <h2 class="hero__title title">Заголовок первого блока (может быть заголовком страницы)</h2>
-        <p class="hero__slogan text">Призыв к действию</p>
-        <a class="hero__action button" href="#">
-          <span class="button__text">Кнопка действия</span>
-        </a>
+    <header class="index__header promo center-fixed">
+      <div class="promo__slider swiper">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+
+          </li>
+          <li class="swiper-slide">
+
+          </li>
+          <li class="swiper-slide">
+
+          </li>
+        </ul>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
     </header>
 
@@ -182,7 +191,7 @@
       </svg>
     </a>
   </footer>
-
+  <script src="./vendor/swiper/swiper-bundle.min.js"></script>
   <script src="scripts/index.js"></script>
 </body>
 
