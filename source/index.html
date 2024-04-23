@@ -56,17 +56,44 @@
 
   <main class="page__main index">
 
-    <header class="index__header promo center-fixed">
+    <header class="index__header promo">
       <div class="promo__slider swiper">
-        <ul class="swiper-wrapper">
-          <li class="swiper-slide">
-
+        <ul class="promo__list swiper-wrapper">
+          <li class="promo__item promo__item--decaf swiper-slide">
+            <figure class="promo__image-container">
+              <picture>
+                <source media="(min-width: 1440px)" type="image/webp" srcset="./images/slides/slide-image-desktop1@1x.webp 1x, ./images/slides/slide-image-desktop1@2x.webp 2x">
+                <source media="(min-width: 768px)" type="image/webp" srcset="./images/slides/slide-image-tablet1@1x.webp 1x, ./images/slides/slide-image-tablet1@2x.webp 2x">
+                <source type="image/webp" srcset="./images/slides/slide-image-mobile1@1x.webp 1x, ./images/slides/slide-image-mobile1@2x.webp 2x">
+                <source media="(min-width: 1440px)" srcset="./images/slides/slide-image-desktop1@1x.png 1x, ./images/slides/slide-image-desktop1@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="./images/slides/slide-image-tablet1@1x.png 1x, ./images/slides/slide-image-tablet1@2x.png 2x">
+                <img class="promo__image" src="./images/slides/slide-image-mobile1@1x.png" srcset="./images/slides/slide-image-mobile1@2x.png 2x"
+                  alt="Напиток cвежесваренный кофе без кофеина Декаф Флэт Уайт">
+              </picture>
+            </figure>
+            <h2 class="promo__title title">Декаф Флэт Уайт</h2>
+            <p class="promo__description text">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+            <p class="promo__prices text">
+              <span class="promo__old-price"></span>
+              <span class="promo__valid-price"></span>
+            </p>
+            <a class="promo__order button" href="#">
+              <span class="button__text">Заказать</span>
+            </a>
           </li>
-          <li class="swiper-slide">
-
-          </li>
-          <li class="swiper-slide">
-
+          <li class="promo__item promo__item--decaf swiper-slide">
+            <figure class="promo__image-container">
+              <picture>
+                <source media="(min-width: 1440px)" type="image/webp" srcset="./images/slides/slide-image-desktop1@1x.webp 1x, ./images/slides/slide-image-desktop1@2x.webp 2x">
+                <source media="(min-width: 768px)" type="image/webp" srcset="./images/slides/slide-image-tablet1@1x.webp 1x, ./images/slides/slide-image-tablet1@2x.webp 2x">
+                <source type="image/webp" srcset="./images/slides/slide-image-mobile1@1x.webp 1x, ./images/slides/slide-image-mobile1@2x.webp 2x">
+                <source media="(min-width: 1440px)" srcset="./images/slides/slide-image-desktop1@1x.png 1x, ./images/slides/slide-image-desktop1@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="./images/slides/slide-image-tablet1@1x.png 1x, ./images/slides/slide-image-tablet1@2x.png 2x">
+                <img class="promo__image" src="./images/slides/slide-image-mobile1@1x.png" srcset="./images/slides/slide-image-mobile1@2x.png 2x"
+                  alt="Напиток cвежесваренный кофе без кофеина Декаф Флэт Уайт">
+              </picture>
+            </figure>
+            <h2 class="promo__title title">Декаф Флэт Уайт</h2>
           </li>
         </ul>
         <div class="swiper-button-next"></div>
@@ -142,16 +169,16 @@
       <h2 class="footer__heading">Интернет-магазин</h2>
       <ul class="footer__menu footer-menu">
         <li class="footer-menu__item">
-          <a class="footer-menu__link text" href="#">Каталог</a>
+          <a class="footer-menu__link text text--uppercase" href="#">Каталог</a>
         </li>
         <li class="footer-menu__item">
-          <a class="footer-menu__link text" href="#">Доставка</a>
+          <a class="footer-menu__link text text--uppercase" href="#">Доставка</a>
         </li>
         <li class="footer-menu__item">
-          <a class="footer-menu__link text" href="#">Способы оплаты</a>
+          <a class="footer-menu__link text text--uppercase" href="#">Способы оплаты</a>
         </li>
         <li class="footer-menu__item">
-          <a class="footer-menu__link text" href="#">О нас</a>
+          <a class="footer-menu__link text text--uppercase" href="#">О нас</a>
         </li>
       </ul>
     </section>
@@ -160,13 +187,13 @@
       <h2 class="footer__heading">Медиа</h2>
       <ul class="footer__menu footer-menu">
         <li class="footer-menu__item">
-          <a class="footer-menu__link text" href="#">Блог</a>
+          <a class="footer-menu__link text text--uppercase" href="#">Блог</a>
         </li>
         <li class="footer-menu__item">
-          <a class="footer-menu__link text" href="#">Информация для СМИ</a>
+          <a class="footer-menu__link text text--uppercase" href="#">Информация для СМИ</a>
         </li>
         <li class="footer-menu__item">
-          <a class="footer-menu__link text" href="#">Правовая информация</a>
+          <a class="footer-menu__link text text--uppercase" href="#">Правовая информация</a>
         </li>
       </ul>
     </section>

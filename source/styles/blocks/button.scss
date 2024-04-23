@@ -31,7 +31,7 @@
   display: block;
   margin: 0;
   padding: $btn-paddings-mobile;
-  background-color: $alt-primary-lighter;
+  background-color: inherit;
 
   @media (min-width: $min-tablet) {
     padding: $btn-paddings-tablet;

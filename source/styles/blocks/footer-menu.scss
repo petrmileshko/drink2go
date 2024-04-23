@@ -13,10 +13,6 @@
   display: block;
   padding: 8px;
 
-  &:not(.footer-menu__link--location):not(.footer-menu__link--phone) {
-    text-transform: uppercase;
-  }
-
   &:hover {
     color: $alt-primary-lighter;
   }

@@ -1,5 +1,82 @@
-.promo {}
+.promo {
+  width: $width-min;
+  margin-left: auto;
+  margin-right: auto;
 
-.promo__slider {
+  @media (min-width: $min-tablet) {
+    width: $min-tablet;
+  }
 
+  @media (min-width: $min-desktop) {
+    width: $min-desktop;
+  }
+}
+
+.promo__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.promo__item {
+  display: flex;
+  flex-direction: column;
+
+  &--decaf {
+    background-color: $bg-flat-white;
+  }
+
+  &--latte {
+    background-color: $bg-lavender-latte;
+  }
+
+  &--espresso {
+    background-color: $bg-espresso;
+  }
+}
+
+.promo__image-container {
+  width: 280px;
+  height: 280px;
+  margin: 0;
+
+  @media (min-width: $min-tablet) {
+    width: 476px;
+    height: 476px;
+
+  }
+
+  @media (min-width: $min-desktop) {
+    width: 600px;
+    height: 600px;
+
+  }
+}
+
+.promo__title {
+  max-width: 280px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.promo__description {
+  max-width: 280px;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: $font-regular;
+  line-height: 20px;
+}
+
+.promo__order {
+  padding: 2px 20px;
+  font-size: 14px;
+  font-weight: $font-regular;
+  line-height: 20px;
+  letter-spacing: 0.7px;
+}
+
+.promo__prices {
+  display: flex;
+  margin: 0;
 }
