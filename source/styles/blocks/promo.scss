@@ -21,6 +21,7 @@
 .promo__item {
   display: flex;
   flex-direction: column;
+  padding-bottom: 60px;
 
   &--decaf {
     background-color: $bg-flat-white;
@@ -39,6 +40,7 @@
   width: 280px;
   height: 280px;
   margin: 0;
+  margin-bottom: 10px;
 
   @media (min-width: $min-tablet) {
     width: 476px;
@@ -53,6 +55,13 @@
   }
 }
 
+.promo__new {
+  margin-bottom: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
 .promo__title {
   max-width: 280px;
   margin: 0;
@@ -62,7 +71,7 @@
 .promo__description {
   max-width: 280px;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   font-size: 14px;
   font-weight: $font-regular;
   line-height: 20px;
@@ -78,5 +87,20 @@
 
 .promo__prices {
   display: flex;
+  align-items: center;
   margin: 0;
+}
+
+.promo__old-price {
+  margin-right: 6px;
+  font-size: 16px;
+  font-weight: $font-regular;
+  text-decoration-line: line-through;
+  color: $base-primary;
+}
+
+.promo__valid-price {
+  margin-right: 20px;
+  font-size: 20px;
+  font-weight: $font-semi;
 }
