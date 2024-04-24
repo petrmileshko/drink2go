@@ -20,6 +20,12 @@
   @media (min-width: $min-tablet) {
     width: 82px;
     height: 36px;
+
+    &--footer {
+      width: 170px;
+      height: 36px;
+      margin-right: 0px;
+    }
   }
 
   @media (min-width: $min-desktop) {

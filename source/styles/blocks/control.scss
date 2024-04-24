@@ -1,0 +1,87 @@
+//Блок с полями для форм
+.control__input {
+  @include visually-hidden();
+}
+
+.control__marker {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  column-gap: 10px;
+  align-items: center;
+  justify-content: start;
+  cursor: pointer;
+
+  &::before {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 24px;
+    height: 24px;
+    border: 2px solid $base-gray;
+    content: "";
+  }
+
+  &::after {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 16px;
+    height: 16px;
+    margin: auto;
+    content: "";
+  }
+
+  .control--radio &::before {
+    border-radius: 50%;
+  }
+
+  .control--radio .control__input:checked+&::after {
+    background-color: $base-primary;
+    border-radius: 50%;
+  }
+
+  .control--radio .control__input:checked+&::before {
+    border-color: $base-primary;
+  }
+  .control--checkbox & {
+    display: grid;
+    grid-template-columns: 42px 1fr;
+    align-items: center;
+  }
+
+  .control--checkbox &::before {
+    width: 42px;
+    height: 24px;
+    background-color: $base-gray;
+    border: none;
+    border-radius: 12px;
+  }
+
+  .control--checkbox &::after {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    background-color: $base-white;
+    border: none;
+    border-radius: 50%;
+  }
+
+  .control--checkbox .control__input:checked+&::after {
+    margin-left: 20px;
+  }
+
+  .control--checkbox .control__input:checked+&::before {
+    background-color: $base-primary;
+  }
+
+  &:hover::before {}
+
+  .control__input:focus+&::before {}
+
+  .control__input:disabled+& {
+    color: $alt-light-grey;
+  }
+
+  .control__input:disabled+&::before {
+    border-color: $alt-light-grey;
+    background-color: $alt-light-grey;
+  }
+}

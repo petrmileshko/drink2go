@@ -10,16 +10,6 @@
   width: $height;
 }
 
-@mixin focus_border() {
-  border-color: transparent;
-  outline: $focus-border-thickness $focus-border-type $focus-border-color;
-}
-
-@mixin invalid_border() {
-  border-color: transparent;
-  outline: $focus-border-thickness $focus-border-type $error-color;
-}
-
 @mixin visually_hidden() {
   position: absolute;
   width: 1px;
@@ -31,6 +21,31 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+@mixin section_headings() {
+  margin: 0;
+  margin-bottom: 4px;
+  font-weight: $font-bold;
+  font-size: $heading-mobile;
+  line-height: $heading-line-height-mobile;
+  color: $base-primary;
+  text-align: center;
+}
+
+@mixin section_intro($mg-bt:20px) {
+  margin: 0;
+  margin-bottom: $mg-bt;
+  font-weight: $font-bold;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+
+  @media (min-width: $min-tablet) {
+    margin-bottom: 60px;
+    font-size: 42px;
+    line-height: 64px;
+  }
 }
 
 //Для тестирования

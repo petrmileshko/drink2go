@@ -145,24 +145,12 @@
   display: flex;
   align-items: center;
   margin: 0;
-
-  @media (min-width: $min-desktop) {
-  }
 }
 
 .promo__order {
   min-width: 113px;
   min-height: 40px;
-  font-weight: $font-regular;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0.7px;
-
-  @media (min-width: $min-tablet) {
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0;
-  }
+  letter-spacing: 0;
 }
 
 .promo__old-price {

@@ -8,14 +8,9 @@
   line-height: $line-height-mobile;
   color: $base-gray;
 
-  @media (min-width: $min-tablet) {
-    margin-top: 8px;
-  }
-
   @media (min-width: $min-desktop) {
     min-width: 155px;
     font-size: 18px;
-    margin-top: 14px;
   }
 }
 
