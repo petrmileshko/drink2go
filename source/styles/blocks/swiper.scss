@@ -4,7 +4,7 @@
 }
 
 .swiper-slide {
-  height: 656px;
+  min-height: 656px;
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -13,11 +13,11 @@
   align-items: center;
 
   @media (min-width: $min-tablet) {
-    height: 828px;
+    min-height: 828px;
   }
 
   @media (min-width: $min-desktop) {
-    height: 714px;
+    min-height: 714px;
   }
 }
 
