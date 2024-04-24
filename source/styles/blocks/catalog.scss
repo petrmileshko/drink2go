@@ -1,0 +1,16 @@
+.catalog {
+  background-color: $bg-lightest-grey;
+}
+
+.catalog__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog__heading {
+  @include section_headings();
+}
+
+.catalog__introduction {
+  @include section_intro();
+}

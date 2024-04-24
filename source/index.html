@@ -184,6 +184,110 @@
         </li>
       </ul>
     </section>
+    <section class="index__section catalog">
+      <div class="catalog__wrapper center-fixed">
+        <h2 class="catalog__heading text text--uppercase">Каталог</h2>
+        <p class="catalog__introduction text">Каталог кофейных напитков</p>
+
+        <form class="catalog__form form" action="/" method="post" id="catalog" autocomplete="off">
+          <fieldset class="form__fields range">
+            <legend class="form__legends"><span>Стоимость</span></legend>
+            <div class="range__slider">
+              <div class="range__bar" style="left: 0; right: 81px;">
+                <button class="range__min" type="button">
+                  <span class="visually-hidden">Изментить минимальную цену</span>
+                </button>
+                <button class="range__max" type="button">
+                  <span class="visually-hidden">Изментить максимальную цену</span>
+                </button>
+              </div>
+            </div>
+            <div class="range__wrapper">
+              <label class="range__label">
+                <span class="visually-hidden">Минимальная цена</span>от&#32;
+                <input class="range__input" type="number" name="min-price" value="0">
+                <span class="range__inputmark"></span>
+              </label>
+              <label class="input-label">
+                <span class="visually-hidden">Максимальная цена</span>До
+                <input class="range__input" type="number" name="max-price" value="5000">
+                <span class="range__mark"></span>
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset class="form__fields">
+            <legend class="form__legends"><span>Наличие молока</span></legend>
+            <label class="form__labels control control--radio">
+              <input class="control__input" type="radio" name="milk" value="nomatter" checked>
+              <span class="control__marker">Неважно</span>
+            </label>
+            <label class="form__labels control control--radio">
+              <input class="control__input" type="radio" name="milk" value="animal">
+              <span class="control__marker">Только животное</span>
+            </label>
+            <label class="form__labels control control--radio">
+              <input class="control__input" type="radio" name="milk" value="vegetable ">
+              <span class="control__marker">Только растительное</span>
+            </label>
+            <label class="form__labels control control--radio">
+              <input class="control__input" type="radio" name="milk" value="nomilk" disabled>
+              <span class="control__marker">Без молока</span>
+            </label>
+          </fieldset>
+
+          <fieldset class="form__fields">
+            <legend class="form__legends"><span>Страна произрастания</span></legend>
+            <label class="form__labels control control--checkbox">
+              <input class="control__input" type="checkbox" name="country" value="brasil" checked>
+              <span class="control__marker">Бразилия</span>
+            </label>
+            <label class="form__labels control control--checkbox">
+              <input class="control__input" type="checkbox" name="country" value="ethiopia">
+              <span class="control__marker">Эфиопия</span>
+            </label>
+            <label class="form__labels control control--checkbox">
+              <input class="control__input" type="checkbox" name="country" value="columbia">
+              <span class="control__marker">Колумбия</span>
+            </label>
+            <label class="form__labels control control--checkbox">
+              <input class="control__input" type="checkbox" name="country" value="сosta-rica">
+              <span class="control__marker">Коста-Рика</span>
+            </label>
+            <label class="form__labels control control--checkbox">
+              <input class="control__input" type="checkbox" name="country" value="peru" disabled>
+              <span class="control__marker">Перу</span>
+            </label>
+          </fieldset>
+
+          <fieldset class="form__fields">
+            <button class="form__submit  button" type="submit">
+              <span class="button__text">Применить</span>
+            </button>
+            <button class="form__submit  button" type="submit">
+              <span class="button__text">Сбросить</span>
+            </button>
+          </fieldset>
+        </form>
+        <details class="catalog__sorting select">
+          <summary class="select__button">По умолчанию</summary>
+          <ul class="select__menu">
+            <li class="select__item select__item--active">
+              <a class="select__option text" href="#">По умолчанию</a>
+            </li>
+            <li class="select__item">
+              <a class="select__option text" href="#">Сначала дорогие</a>
+            </li>
+            <li class="select__item">
+              <a class="select__option text" href="#">Сначала дешёвые</a>
+            </li>
+            <li class="select__item">
+              <a class="select__option text" href="#">Высокий рейтинг</a>
+            </li>
+          </ul>
+        </details>
+      </div>
+    </section>
     <footer class="index__footer contacts">
       <div class="contacts__map map">
         <figure class="map__images map__images--nojs">

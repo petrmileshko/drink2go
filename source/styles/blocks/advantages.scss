@@ -5,28 +5,11 @@
 }
 
 .advantages__heading {
-  margin: 0;
-  margin-bottom: 4px;
-  font-weight: $font-bold;
-  font-size: $heading-mobile;
-  line-height: $heading-line-height-mobile;
-  color: $base-primary;
-  text-align: center;
+  @include section_headings();
 }
 
 .advantages__introduction {
-  margin: 0;
-  margin-bottom: 36px;
-  font-weight: $font-bold;
-  font-size: 24px;
-  line-height: 36px;
-  text-align: center;
-
-  @media (min-width: $min-tablet) {
-    margin-bottom: 60px;
-    font-size: 42px;
-    line-height: 64px;
-  }
+  @include section_intro(36px);
 }
 
 .advantages__items {
