@@ -191,26 +191,27 @@
 
         <form class="catalog__form form" action="/" method="post" id="catalog" autocomplete="off">
           <fieldset class="form__fields range">
-            <legend class="form__legends"><span>Стоимость</span></legend>
+            <legend class="form__legends"><span>Цена</span></legend>
             <div class="range__slider">
-              <div class="range__bar" style="left: 0; right: 81px;">
-                <button class="range__min" type="button">
+              <div class="range__bar" style="left: 0; right: 31px;">
+                <button class="range__pin range__pin--min" type="button">
                   <span class="visually-hidden">Изментить минимальную цену</span>
                 </button>
-                <button class="range__max" type="button">
+                <button class="range__pin range__pin--max" type="button">
                   <span class="visually-hidden">Изментить максимальную цену</span>
                 </button>
               </div>
             </div>
             <div class="range__wrapper">
               <label class="range__label">
-                <span class="visually-hidden">Минимальная цена</span>от&#32;
+                <span class="visually-hidden">Минимальная цена от</span>
                 <input class="range__input" type="number" name="min-price" value="0">
                 <span class="range__inputmark"></span>
               </label>
-              <label class="input-label">
-                <span class="visually-hidden">Максимальная цена</span>До
-                <input class="range__input" type="number" name="max-price" value="5000">
+              <span class="range__devider"></span>
+              <label class="range__label">
+                <span class="visually-hidden">Максимальная цена lо</span>
+                <input class="range__input" type="number" name="max-price" value="123">
                 <span class="range__mark"></span>
               </label>
             </div>

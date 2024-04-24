@@ -14,3 +14,7 @@
 .catalog__introduction {
   @include section_intro();
 }
+
+.catalog__form {
+  padding: 50px 0 20px;
+}

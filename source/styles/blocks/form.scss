@@ -1,0 +1,33 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form__fields {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 34px;
+  padding: 0;
+  border: none;
+}
+
+.form__legends {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  font-weight: $font-semi;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.form__labels {
+  font-size: 16px;
+  line-height: 24px;
+
+  &:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+}
