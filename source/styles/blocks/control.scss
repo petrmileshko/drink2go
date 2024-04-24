@@ -1,19 +1,14 @@
 //Блок с полями для форм
-.control {
-  display: grid;
-}
-
 .control__input {
   @include visually-hidden();
 }
 
 .control__marker {
-  grid-column: 1 / -1;
-  grid-row: 1 / 2;
   display: grid;
   grid-template-columns: 24px 1fr;
-  column-gap: 15px;
+  column-gap: 10px;
   align-items: center;
+  justify-content: start;
   cursor: pointer;
 
   &::before {
@@ -43,10 +38,13 @@
     border-radius: 50%;
   }
 
+  .control--radio .control__input:checked+&::before {
+    border-color: $base-primary;
+  }
   .control--checkbox & {
+    display: grid;
     grid-template-columns: 42px 1fr;
-    justify-content: start;
-    width: 42px;
+    align-items: center;
   }
 
   .control--checkbox &::before {
@@ -60,13 +58,14 @@
   .control--checkbox &::after {
     width: 20px;
     height: 20px;
+    margin-right: 20px;
     background-color: $base-white;
     border: none;
     border-radius: 50%;
   }
 
   .control--checkbox .control__input:checked+&::after {
-    align-self: start;
+    margin-left: 20px;
   }
 
   .control--checkbox .control__input:checked+&::before {
@@ -77,9 +76,12 @@
 
   .control__input:focus+&::before {}
 
-  .control__input:disabled+& {}
+  .control__input:disabled+& {
+    color: $alt-light-grey;
+  }
 
   .control__input:disabled+&::before {
     border-color: $alt-light-grey;
+    background-color: $alt-light-grey;
   }
 }

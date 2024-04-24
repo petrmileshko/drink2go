@@ -261,32 +261,35 @@
             </label>
           </fieldset>
 
-          <fieldset class="form__fields">
-            <button class="form__submit  button" type="submit">
+          <fieldset class="form__fields form__fields--buttons">
+            <button class="form__submit button" type="submit">
               <span class="button__text">Применить</span>
             </button>
-            <button class="form__submit  button" type="submit">
+            <button class="form__submit button" type="reset">
               <span class="button__text">Сбросить</span>
             </button>
           </fieldset>
         </form>
-        <details class="catalog__sorting select">
-          <summary class="select__button">По умолчанию</summary>
-          <ul class="select__menu">
-            <li class="select__item select__item--active">
-              <a class="select__option text" href="#">По умолчанию</a>
-            </li>
-            <li class="select__item">
-              <a class="select__option text" href="#">Сначала дорогие</a>
-            </li>
-            <li class="select__item">
-              <a class="select__option text" href="#">Сначала дешёвые</a>
-            </li>
-            <li class="select__item">
-              <a class="select__option text" href="#">Высокий рейтинг</a>
-            </li>
-          </ul>
-        </details>
+        <div class="catalog__sorting">
+          <span>Сортировка:</span>
+          <details class="select">
+            <summary class="select__button">по умолчанию</summary>
+            <ul class="select__menu">
+              <li class="select__item">
+                <a class="select__option select__option--active text" href="#">по умолчанию</a>
+              </li>
+              <li class="select__item">
+                <a class="select__option text" href="#">сначала дорогие</a>
+              </li>
+              <li class="select__item">
+                <a class="select__option text" href="#">сначала дешёвые</a>
+              </li>
+              <li class="select__item">
+                <a class="select__option text" href="#">высокий рейтинг</a>
+              </li>
+            </ul>
+          </details>
+        </div>
       </div>
     </section>
     <footer class="index__footer contacts">

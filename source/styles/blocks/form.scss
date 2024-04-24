@@ -2,6 +2,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: $min-tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
 }
 
 .form__fields {
@@ -12,6 +18,24 @@
   margin-bottom: 34px;
   padding: 0;
   border: none;
+
+  @media (min-width: $min-tablet) {
+    width: auto;
+
+    &:not(:nth-of-type(3)):not(.form__fields--buttons) {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
+
+    &--buttons {
+      width: 100%;
+      max-width: 277px;
+      flex-flow: nowrap;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+    }
+  }
 }
 
 .form__legends {
@@ -29,5 +53,23 @@
 
   &:not(:last-of-type) {
     margin-bottom: 20px;
+  }
+}
+
+.form__submit {
+  width: 100%;
+  border-radius: 4px;
+
+  &:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $min-tablet) {
+    max-width: 277px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 0px;
+      margin-right: 20px;
+    }
   }
 }

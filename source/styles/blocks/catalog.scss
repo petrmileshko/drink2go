@@ -18,3 +18,21 @@
 .catalog__form {
   padding: 50px 0 20px;
 }
+
+.catalog__sorting {
+  display: flex;
+  align-items: center;
+  font-weight: $font-semi;
+  font-size: 16px;
+  line-height: 24px;
+
+  span {
+    margin-right: 8px;
+  }
+
+  @media (min-width: $min-tablet) {
+    span {
+      margin-right: 10px;
+    }
+  }
+}

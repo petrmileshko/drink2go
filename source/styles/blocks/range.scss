@@ -1,8 +1,11 @@
 .range {
   display: flex;
   flex-direction: column;
-  width: 100%;
   margin-bottom: 30px;
+
+  @media (min-width: $min-tablet) {
+    width: 223px;
+  }
 }
 
 .range__slider {
@@ -58,6 +61,13 @@
   text-align: center;
   border: 2px solid $alt-primary-lighter;
 
+  &[value="0"] {
+    color: $base-gray;
+  }
+
+  @media (min-width: $min-tablet) {
+    width: 67px;
+  }
 }
 
 .range__devider {
