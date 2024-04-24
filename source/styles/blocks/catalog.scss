@@ -16,12 +16,13 @@
 }
 
 .catalog__form {
-  padding: 50px 0 20px;
+  padding: 50px 0 0;
 }
 
 .catalog__sorting {
   display: flex;
   align-items: center;
+  margin-bottom: 16px;
   font-weight: $font-semi;
   font-size: 16px;
   line-height: 24px;
@@ -35,4 +36,25 @@
       margin-right: 10px;
     }
   }
+}
+
+.catalog__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.catalog__item {
+  &:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+}
+
+.catalog__pagination {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }

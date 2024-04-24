@@ -48,7 +48,9 @@
 }
 
 .select__item {
-  border-bottom: 1px solid $base-secondary;
+  &:not(:last-of-type) {
+    border-bottom: 1px solid $base-secondary;
+  }
 }
 
 .select__option {
