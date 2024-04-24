@@ -1,5 +1,16 @@
 .catalog {
+  width: $width-min;
+  margin-left: auto;
+  margin-right: auto;
   background-color: $bg-lightest-grey;
+
+  @media (min-width: $min-tablet) {
+    width: $min-tablet;
+  }
+
+  @media (min-width: $min-desktop) {
+    width: $min-desktop;
+  }
 }
 
 .catalog__wrapper {
