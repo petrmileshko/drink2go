@@ -1,0 +1,11 @@
+.index__section {
+  padding: 50px 0 60px 0;
+
+  @media (min-width: $min-tablet) {
+    padding: 60px 0 100px 0;
+  }
+
+  @media (min-width: $min-desktop) {
+    padding: 100px 0 120px 0;
+  }
+}

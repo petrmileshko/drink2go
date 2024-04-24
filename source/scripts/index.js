@@ -26,6 +26,7 @@ menuMobile({
 })();
 
 const swiper = new Swiper(".promo__slider", {
+  loop: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",

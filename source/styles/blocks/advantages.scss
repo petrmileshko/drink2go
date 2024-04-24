@@ -1,0 +1,144 @@
+.advantages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advantages__heading {
+  margin: 0;
+  margin-bottom: 4px;
+  font-weight: $font-bold;
+  font-size: $heading-mobile;
+  line-height: $heading-line-height-mobile;
+  color: $base-primary;
+  text-align: center;
+}
+
+.advantages__introduction {
+  margin: 0;
+  margin-bottom: 36px;
+  font-weight: $font-bold;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+
+  @media (min-width: $min-tablet) {
+    margin-bottom: 60px;
+    font-size: 42px;
+    line-height: 64px;
+  }
+}
+
+.advantages__items {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $min-tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 50px;
+  }
+
+  @media (min-width: $min-desktop) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: initial;
+    row-gap: initial;
+  }
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &:not(:last-of-type) {
+    margin-bottom: 32px;
+  }
+
+  &::before {
+    display: block;
+    width: 52px;
+    height: 56px;
+    margin-bottom: 10px;
+    content: "";
+  }
+
+  &--speed::before {
+    background-image: url("../../icons/icon-speed.svg");
+  }
+
+  &--convenience::before {
+    background-image: url("../../icons/icon-convenience.svg");
+  }
+
+  &--energy::before {
+    background-image: url("../../icons/icon-energy.svg");
+  }
+
+  &--ecological::before {
+    background-image: url("../../icons/icon-ecological.svg");
+  }
+
+  @media (min-width: $min-tablet) {
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 72px;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  @media (min-width: $min-tablet) {
+    position: static;
+    flex-direction: column;
+    max-width: 318px;
+    padding-left: initial;
+
+    &:not(:last-of-type) {
+      margin-right: 23px;
+    }
+
+    &::before {
+      position: static;
+    }
+  }
+}
+
+.advantages__title {
+  margin: 0;
+  margin-bottom: 4px;
+  font-weight: $font-bold;
+  font-size: 18px;
+  line-height: 32px;
+
+  @media (min-width: $min-tablet) {
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.advantages__description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+
+  @media (min-width: $min-tablet) {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+  }
+}
