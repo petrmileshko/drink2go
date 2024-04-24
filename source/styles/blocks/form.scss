@@ -8,6 +8,10 @@
     flex-wrap: wrap;
     align-items: flex-start;
   }
+
+  @media (min-width: $min-desktop) {
+    flex-direction: column;
+  }
 }
 
 .form__fields {
@@ -38,6 +42,16 @@
     }
   }
 
+  @media (min-width: $min-desktop) {
+    &--buttons {
+      width: 100%;
+      max-width: initial;
+      flex-flow: nowrap;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0;
+    }
+  }
 }
 
 .form__legends {

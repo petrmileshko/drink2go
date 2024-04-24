@@ -3,6 +3,8 @@
   align-items: center;
   justify-content: center;
   padding: 22px;
+  background-color: $base-white;
+  border: none;
   cursor: pointer;
 
   &--nojs {
@@ -23,7 +25,7 @@
   display: block;
   width: $burger-width;
   height: $burger-thickness;
-  background-color:$base-black;
+  background-color: $base-black;
 
   transform: rotateZ(0);
   transition: 0.4s ease all;

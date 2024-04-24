@@ -185,9 +185,10 @@
       </ul>
     </section>
     <section class="index__section catalog">
+      <h2 class="catalog__heading text text--uppercase">Каталог</h2>
+      <p class="catalog__introduction text">Каталог кофейных напитков</p>
+
       <div class="catalog__wrapper center-fixed">
-        <h2 class="catalog__heading text text--uppercase">Каталог</h2>
-        <p class="catalog__introduction text">Каталог кофейных напитков</p>
 
         <form class="catalog__form form" action="/" method="post" id="catalog" autocomplete="off">
           <fieldset class="form__fields range">
@@ -270,6 +271,7 @@
             </button>
           </fieldset>
         </form>
+
         <div class="catalog__sorting">
           <span>Сортировка:</span>
           <details class="select">
@@ -425,6 +427,7 @@
             </div>
           </li>
         </ul>
+
         <ul class="catalog__pagination pagination">
           <li class="pagination__item">
             <a class="pagination__link pagination__link--scroll" href="#">
@@ -452,6 +455,7 @@
             </a>
           </li>
         </ul>
+
       </div>
     </section>
     <footer class="index__footer contacts">
@@ -481,10 +485,9 @@
 
   <footer class="page__footer footer center-fixed">
     <div class="footer__wrapper">
-      <a class="logo" href="#top">
+      <a class="footer__logo logo" href="#top">
         <picture>
-          <source media="(min-width: 1440px)" srcset="./images/logo/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="./images/logo/logo-tablet.svg">
+          <source media="(min-width: 768px)" srcset="./images/logo/logo-desktop.svg">
           <img class="logo__image logo__image--footer" src="./images/logo/logo-tablet.svg" alt="Логотип Drink Go">
         </picture>
         <span class="logo__text">Интернет-магазин кофейных напитков</span>
@@ -564,7 +567,7 @@
       </ul>
     </section>
 
-    <a class="developers text" href="https://htmlacademy.ru/intensive/adaptive">
+    <a class="footer_developers developers text" href="https://htmlacademy.ru/intensive/adaptive">
       <span class="developers__message">Разработано в HTML Academy</span>
       <svg class="developers__image" width="12" height="16" viewBox="0 0 12 16">
         <use xlink:href="./icons/stack.svg#ico-dev"></use>
