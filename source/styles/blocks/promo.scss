@@ -47,7 +47,7 @@
 
   @media (min-width: $min-tablet) and (max-width: $max-tablet) {
     padding-top: 0;
-    padding-bottom: 0px;
+    padding-bottom: 0;
 
     &--decaf {
       background-image: linear-gradient(to bottom, $bg-flat-white 77%, $base-white 77%, $base-white 100%);
@@ -90,7 +90,7 @@
     justify-self: end;
     width: 600px;
     height: 600px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 
