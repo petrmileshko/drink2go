@@ -11,7 +11,7 @@
   @media (min-width: $min-desktop) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    row-gap: 0px;
+    row-gap: 0;
   }
 }
 
@@ -29,7 +29,7 @@
     content: "";
   }
 
-  &:last-of-type:after {
+  &:last-of-type::after {
     position: absolute;
     width: 100vw;
     height: 1px;
@@ -98,6 +98,6 @@
   }
 
   @media (min-width: $min-desktop) {
-    margin-top: 0px;
+    margin-top: 0;
   }
 }
