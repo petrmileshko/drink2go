@@ -23,14 +23,12 @@
   @media (min-width: $min-tablet) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 30px;
-    row-gap: 50px;
+    gap: 50px 30px;
   }
 
   @media (min-width: $min-desktop) {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: wrap;
     column-gap: initial;
     row-gap: initial;
   }
@@ -71,8 +69,7 @@
 
   @media (min-width: $min-tablet) {
     position: relative;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: wrap;
     padding-left: 72px;
 
     &::before {

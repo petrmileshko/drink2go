@@ -103,7 +103,7 @@
 
   @media (min-width: $min-tablet) {
     &:not(:last-of-type) {
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
   }
 }
