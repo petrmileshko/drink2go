@@ -13,7 +13,7 @@ img {
 
 :root {
   --swiper-navigation-size: 20px;
-  --swiper-navigation-sides-offset: 50px;
+  --swiper-navigation-sides-offset: 4px;
   --swiper-navigation-color: #{$base-primary};
 
   @media (min-width: $min-tablet) {

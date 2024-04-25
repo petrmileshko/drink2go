@@ -72,17 +72,22 @@
     background-color: $base-primary;
   }
 
-  .control--checkbox .control__input:not(:disabled)+ &:hover::before {
+  .control--checkbox .control__input:not(:disabled):not(:checked) + &:hover::before {
     background-color: $alt-primary-opacity;
     border: 2px solid $alt-primary-lighter;
   }
 
-  .control--radio .control__input:not(:disabled) + &:hover::before {
+  .control--radio .control__input:not(:disabled):not(:checked) + &:hover::before {
     border: 2px solid $alt-primary-lighter;
   }
 
-  .control--radio .control__input:not(:disabled) + &:hover::after {
+  .control--radio .control__input:not(:disabled):not(:checked) + &:hover::after {
     background-color: $alt-primary-opacity;
+    border-radius: 50%;
+  }
+
+  .control--radio .control__input:not(:disabled) + &:active::after {
+    background-color: $base-primary;
     border-radius: 50%;
   }
 
