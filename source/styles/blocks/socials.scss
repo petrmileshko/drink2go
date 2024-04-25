@@ -5,36 +5,23 @@
 
 .socials__item {
   display: flex;
-  padding: 10px;
-
-  &--pinterest {
-    padding: 8px 9px;
-  }
+  align-items: stretch;
+  justify-content: stretch;
+  width: 40px;
+  height: 40px;
 
   &:not(:last-of-type) {
     margin-right: 20px;
-  }
-
-  &:hover {
-    background-color: $base-secondary;
-  }
-
-  &:active {
-    background-color: $alt-primary-opacity;
   }
 }
 
 .socials__link {
   display: flex;
-  width: 20px;
-  height: 20px;
-
-  &--pinterest {
-    width: 22px;
-    height: 22px;
-  }
+  width: 40px;
+  height: 40px;
 
   svg {
+    margin: auto;
     color: $base-gray;
   }
 
@@ -44,5 +31,13 @@
 
   &:active svg {
     color: $alt-primary-darker;
+  }
+
+  &:hover {
+    background-color: $base-secondary;
+  }
+
+  &:active {
+    background-color: $alt-primary-opacity;
   }
 }
