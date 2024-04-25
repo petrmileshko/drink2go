@@ -28,7 +28,6 @@
 
   @media (min-width: $min-desktop) {
     display: flex;
-    flex-direction: row;
     flex-flow: wrap;
     column-gap: initial;
     row-gap: initial;
@@ -70,7 +69,6 @@
 
   @media (min-width: $min-tablet) {
     position: relative;
-    flex-direction: row;
     flex-flow: wrap;
     padding-left: 72px;
 
