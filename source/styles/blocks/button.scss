@@ -35,10 +35,6 @@
     background-color: $alt-primary-lighter;
   }
 
-  &:disabled {
-    background-color: $base-gray;
-  }
-
   &--additional:hover {
     color: $base-white;
   }
@@ -49,6 +45,10 @@
 
   &--additional:focus:not(:active):not(.burger) {
     color: $base-white;
+  }
+
+  &:disabled {
+    background-color: $base-gray;
   }
 
   &--additional:disabled {
