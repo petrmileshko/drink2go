@@ -5,10 +5,9 @@
   <meta charset="UTF-8">
   <title>DRINK GO</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="preload" href="./fonts/montserrat-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- <link rel="preload" href="./fonts/montserrat-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./fonts/montserrat-medium.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="./fonts/montserrat-bold.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="./vendor/swiper/swiper-bundle.min.css" />
+  <link rel="preload" href="./fonts/montserrat-bold.woff2" as="font" type="font/woff2" crossorigin> -->
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
@@ -17,9 +16,9 @@
     <nav class="navigation">
       <span class="navigation__logo logo">
         <picture>
-          <source media="(min-width: 1440px)" srcset="./images/logo/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="./images/logo/logo-tablet.svg">
-          <img class="logo__image" src="./images/logo/logo-mobile.svg" alt="Логотип Drink Go">
+          <source media="(min-width: 1440px)" srcset="./images/logo/logo-desktop.svg" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="./images/logo/logo-tablet.svg" type="image/svg+xml">
+          <img class="logo__image" src="./images/logo/logo-mobile.svg" width="32" height="36" alt="Логотип Drink Go">
         </picture>
         <span class="logo__text text">Интернет-магазин<br>кофейных напитков</span>
       </span>
@@ -69,11 +68,11 @@
                 <source type="image/webp"
                   srcset="./images/slides/slide-image-mobile1@1x.webp 1x, ./images/slides/slide-image-mobile1@2x.webp 2x">
                 <source media="(min-width: 1440px)"
-                  srcset="./images/slides/slide-image-desktop1@1x.png 1x, ./images/slides/slide-image-desktop1@2x.png 2x">
+                  srcset="./images/slides/slide-image-desktop1@1x.png 1x, ./images/slides/slide-image-desktop1@2x.png 2x" type="image/png">
                 <source media="(min-width: 768px)"
-                  srcset="./images/slides/slide-image-tablet1@1x.png 1x, ./images/slides/slide-image-tablet1@2x.png 2x">
+                  srcset="./images/slides/slide-image-tablet1@1x.png 1x, ./images/slides/slide-image-tablet1@2x.png 2x" type="image/png">
                 <img class="promo__image" src="./images/slides/slide-image-mobile1@1x.png"
-                  srcset="./images/slides/slide-image-mobile1@2x.png 2x"
+                  srcset="./images/slides/slide-image-mobile1@2x.png 2x" width="280" height="280"
                   alt="Напиток cвежесваренный кофе без кофеина Декаф Флэт Уайт.">
               </picture>
             </figure>
@@ -101,11 +100,11 @@
                 <source type="image/webp"
                   srcset="./images/slides/slide-image-mobile2@1x.webp 1x, ./images/slides/slide-image-mobile2@2x.webp 2x">
                 <source media="(min-width: 1440px)"
-                  srcset="./images/slides/slide-image-desktop2@1x.png 1x, ./images/slides/slide-image-desktop2@2x.png 2x">
+                  srcset="./images/slides/slide-image-desktop2@1x.png 1x, ./images/slides/slide-image-desktop2@2x.png 2x" type="image/png">
                 <source media="(min-width: 768px)"
-                  srcset="./images/slides/slide-image-tablet2@1x.png 1x, ./images/slides/slide-image-tablet2@2x.png 2x">
+                  srcset="./images/slides/slide-image-tablet2@1x.png 1x, ./images/slides/slide-image-tablet2@2x.png 2x" type="image/png">
                 <img class="promo__image" src="./images/slides/slide-image-mobile2@1x.png"
-                  srcset="./images/slides/slide-image-mobile2@2x.png 2x" alt="Напиток Лавандовый Латте.">
+                  srcset="./images/slides/slide-image-mobile2@2x.png 2x" width="280" height="280" alt="Напиток Лавандовый Латте.">
               </picture>
             </figure>
             <div class="promo__wrapper">
@@ -132,11 +131,11 @@
                 <source type="image/webp"
                   srcset="./images/slides/slide-image-mobile3@1x.webp 1x, ./images/slides/slide-image-mobile3@2x.webp 2x">
                 <source media="(min-width: 1440px)"
-                  srcset="./images/slides/slide-image-desktop3@1x.png 1x, ./images/slides/slide-image-desktop3@2x.png 2x">
+                  srcset="./images/slides/slide-image-desktop3@1x.png 1x, ./images/slides/slide-image-desktop3@2x.png 2x" type="image/png">
                 <source media="(min-width: 768px)"
-                  srcset="./images/slides/slide-image-tablet3@1x.png 1x, ./images/slides/slide-image-tablet3@2x.png 2x">
+                  srcset="./images/slides/slide-image-tablet3@1x.png 1x, ./images/slides/slide-image-tablet3@2x.png 2x" type="image/png">
                 <img class="promo__image" src="./images/slides/slide-image-mobile3@1x.png"
-                  srcset="./images/slides/slide-image-mobile3@2x.png 2x" alt="Напиток Тройной Эспрессо.">
+                  srcset="./images/slides/slide-image-mobile3@2x.png 2x" width="280" height="280" alt="Напиток Тройной Эспрессо.">
               </picture>
             </figure>
             <div class="promo__wrapper">
@@ -300,7 +299,7 @@
                 <source type="image/webp"
                   srcset="./images/cards/card-image1@1x.webp 1x, ./images/cards/card-image1@2x.webp 2x">
                 <img class="card__image" src="./images/cards/card-image1@1x.png"
-                  srcset="./images/cards/card-image1@2x.png 2x" alt="Кофе c молоком в баночке." loading="lazy"
+                  srcset="./images/cards/card-image1@2x.png 2x" width="130" height="188" alt="Кофе c молоком в баночке." loading="lazy"
                   decoding="async">
               </picture>
             </figure>
@@ -322,7 +321,7 @@
                 <source type="image/webp"
                   srcset="./images/cards/card-image2@1x.webp 1x, ./images/cards/card-image2@2x.webp 2x">
                 <img class="card__image" src="./images/cards/card-image2@1x.png"
-                  srcset="./images/cards/card-image2@2x.png 2x" alt="Кофе c молоком в баночке." loading="lazy"
+                  srcset="./images/cards/card-image2@2x.png 2x" width="130" height="188"  alt="Кофе c молоком в баночке." loading="lazy"
                   decoding="async">
               </picture>
             </figure>
@@ -344,7 +343,7 @@
                 <source type="image/webp"
                   srcset="./images/cards/card-image3@1x.webp 1x, ./images/cards/card-image3@2x.webp 2x">
                 <img class="card__image" src="./images/cards/card-image3@1x.png"
-                  srcset="./images/cards/card-image3@2x.png 2x" alt="Кофе c молоком в баночке." loading="lazy"
+                  srcset="./images/cards/card-image3@2x.png 2x" width="130" height="188"  alt="Кофе c молоком в баночке." loading="lazy"
                   decoding="async">
               </picture>
             </figure>
@@ -366,7 +365,7 @@
                 <source type="image/webp"
                   srcset="./images/cards/card-image4@1x.webp 1x, ./images/cards/card-image4@2x.webp 2x">
                 <img class="card__image" src="./images/cards/card-image4@1x.png"
-                  srcset="./images/cards/card-image4@2x.png 2x" alt="Кофе c молоком в баночке." loading="lazy"
+                  srcset="./images/cards/card-image4@2x.png 2x" width="130" height="188"  alt="Кофе c молоком в баночке." loading="lazy"
                   decoding="async">
               </picture>
             </figure>
@@ -388,7 +387,7 @@
                 <source type="image/webp"
                   srcset="./images/cards/card-image5@1x.webp 1x, ./images/cards/card-image5@2x.webp 2x">
                 <img class="card__image" src="./images/cards/card-image5@1x.png"
-                  srcset="./images/cards/card-image5@2x.png 2x" alt="Кофе c молоком в баночке." loading="lazy"
+                  srcset="./images/cards/card-image5@2x.png 2x" width="130" height="188"  alt="Кофе c молоком в баночке." loading="lazy"
                   decoding="async">
               </picture>
             </figure>
@@ -410,7 +409,7 @@
                 <source type="image/webp"
                   srcset="./images/cards/card-image6@1x.webp 1x, ./images/cards/card-image6@2x.webp 2x">
                 <img class="card__image" src="./images/cards/card-image6@1x.png"
-                  srcset="./images/cards/card-image6@2x.png 2x" alt="Кофе c молоком в баночке." loading="lazy"
+                  srcset="./images/cards/card-image6@2x.png 2x" width="130" height="188"  alt="Кофе c молоком в баночке." loading="lazy"
                   decoding="async">
               </picture>
             </figure>
@@ -470,15 +469,14 @@
             <source media="(min-width: 1440px)"
               srcset="./images/map/descktop@1x.jpeg 1x, ./images/map/descktop@2x.jpeg 2x">
             <source media="(min-width: 768px)" srcset="./images/map/tablet@1x.jpeg 1x, ./images/map/tablet@2x.jpeg 2x">
-            <img class="map__image" src="./images/map/mobile@1x.jpeg" srcset="./images/map/mobile@2x.jpeg 2x"
+            <img class="map__image" width="320" height="420" src="./images/map/mobile@1x.jpeg" srcset="./images/map/mobile@2x.jpeg 2x"
               alt="Карта местоположения" loading="lazy" decoding="async">
           </picture>
           <figcaption class="map__marker">
             Санкт-Петербург, набережная реки Карповки, дом 5
           </figcaption>
         </figure>
-        <iframe class="map__yandex map__yandex--nojs lazy" title="Местоположение офиса"
-          data-src="https://yandex.ru/maps/?um=constructor%3Ad552a25fa02716426690142f84c51e5ce440596e35b54d00bb8bfb494fa51c2a&amp;source=constructorStatic"></iframe>
+        <div class="map__leaflet map__leaflet--nojs" style="width: 320px; height: 420px;" id="map"></div>
       </div>
     </footer>
   </main>
@@ -487,8 +485,8 @@
     <div class="footer__wrapper">
       <a class="footer__logo logo" href="#top">
         <picture>
-          <source media="(min-width: 768px)" srcset="./images/logo/logo-desktop.svg">
-          <img class="logo__image logo__image--footer" src="./images/logo/logo-tablet.svg" alt="Логотип Drink Go">
+          <source media="(min-width: 768px)" srcset="./images/logo/logo-desktop.svg" type="image/svg+xml">
+          <img class="logo__image logo__image--footer" src="./images/logo/logo-tablet.svg" width="82" height="36" alt="Логотип Drink Go">
         </picture>
         <span class="logo__text">Интернет-магазин кофейных напитков</span>
       </a>
@@ -575,6 +573,7 @@
     </a>
   </footer>
   <script src="./vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="./vendor/leaflet/leaflet.js"></script>
   <script src="scripts/index.js"></script>
 </body>
 

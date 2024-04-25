@@ -52,22 +52,23 @@
   }
 }
 
-.map__yandex {
-  display: block;
-  width: 100%;
-  height: 420px;
-  background: none;
-  border: none;
+.map__leaflet {
 
   &--nojs {
     display: none;
   }
 
   @media (min-width: $min-tablet) {
-    height: 480px;
+    width: 768px !important;
+    height: 480px !important;
   }
 
   @media (min-width: $min-desktop) {
-    height: 540px;
+    width: 1440px !important;
+    height: 540px !important;
   }
+}
+
+.leaflet-bottom.leaflet-right {
+  opacity: 0;
 }
