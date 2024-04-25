@@ -53,12 +53,12 @@
   }
 
   @media (min-width: $min-tablet) {
-    width: 768px !important;
-    height: 480px !important;
+    width: 768px !important;    // Не нашел другого способа
+    height: 480px !important;   // для адаптации размера карты под ширину экрана
   }
 
   @media (min-width: $min-desktop) {
-    width: 1440px !important;
+    width: 1440px !important;   // для адаптации размера карты под ширину экрана
     height: 540px !important;
   }
 }
