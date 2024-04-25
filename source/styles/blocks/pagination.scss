@@ -3,8 +3,6 @@
 }
 
 .pagination__item {
-  background-color: $base-white;
-
   &:not(:last-of-type) {
     margin-right: 20px;
   }
@@ -26,10 +24,19 @@
   line-height: 24px;
   text-decoration: none;
   color: $base-primary;
+  background-color: $base-white;
 
   &--current {
     font-weight: $font-semi;
     color: $base-black;
+    background-color: $base-white;
+    cursor: none;
+    pointer-events: none;
+  }
+
+  &--scroll_hide {
+    cursor: none;
+    pointer-events: none;
   }
 
   @media (min-width: $min-tablet) {
@@ -37,6 +44,12 @@
       width: auto;
       height: auto;
       padding: 8px 20px;
+    }
+
+    &--scroll_hide {
+      opacity: 0;
+      cursor: none;
+      pointer-events: none;
     }
   }
 }

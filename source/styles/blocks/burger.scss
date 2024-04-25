@@ -18,6 +18,10 @@
   &:active {
     background-color: $base-secondary;
   }
+
+  &:focus:not(:active) {
+    outline: none;
+  }
 }
 
 .burger__icon {

@@ -21,11 +21,11 @@
 .developers__image {
   color: $base-gray;
 
-  &:hover {
+  .developers:hover & {
     color: $base-primary;
   }
 
-  &:active {
+  .developers:active & {
     color: $alt-primary-darker;
   }
 }
