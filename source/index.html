@@ -41,13 +41,13 @@
             <svg class="user-menu__icon" width="16" height="16" viewBox="0 0 16 16">
               <use xlink:href="./icons/stack.svg#ico-login"></use>
             </svg>
-            <span> Войти</span>
+            <span>Войти</span>
           </a></li>
         <li class="user-menu__item"><a class="user-menu__link text" href="#">
             <svg class="user-menu__icon" width="16" height="16" viewBox="0 0 16 16">
               <use xlink:href="./icons/stack.svg#ico-cart"></use>
             </svg>
-            <span> Корзина</span>
+            <span>Корзина</span>
           </a></li>
       </ul>
     </nav>
@@ -68,13 +68,16 @@
                 <source type="image/webp"
                   srcset="./images/slides/slide-image-mobile1@1x.webp 1x, ./images/slides/slide-image-mobile1@2x.webp 2x">
                 <source media="(min-width: 1440px)"
-                  srcset="./images/slides/slide-image-desktop1@1x.png 1x, ./images/slides/slide-image-desktop1@2x.png 2x" type="image/png">
+                  srcset="./images/slides/slide-image-desktop1@1x.png 1x, ./images/slides/slide-image-desktop1@2x.png 2x"
+                  type="image/png">
                 <source media="(min-width: 768px)"
-                  srcset="./images/slides/slide-image-tablet1@1x.png 1x, ./images/slides/slide-image-tablet1@2x.png 2x" type="image/png">
+                  srcset="./images/slides/slide-image-tablet1@1x.png 1x, ./images/slides/slide-image-tablet1@2x.png 2x"
+                  type="image/png">
                 <img class="promo__image" src="./images/slides/slide-image-mobile1@1x.png"
                   srcset="./images/slides/slide-image-mobile1@2x.png 2x" width="280" height="280"
                   alt="Напиток cвежесваренный кофе без кофеина Декаф Флэт Уайт.">
               </picture>
+              <figcaption class="visually-hidden">Напиток cвежесваренный кофе без кофеина Декаф Флэт Уайт.</figcaption>
             </figure>
             <div class="promo__wrapper">
               <span class="promo__new text text--uppercase">Новинка!</span>
@@ -100,12 +103,16 @@
                 <source type="image/webp"
                   srcset="./images/slides/slide-image-mobile2@1x.webp 1x, ./images/slides/slide-image-mobile2@2x.webp 2x">
                 <source media="(min-width: 1440px)"
-                  srcset="./images/slides/slide-image-desktop2@1x.png 1x, ./images/slides/slide-image-desktop2@2x.png 2x" type="image/png">
+                  srcset="./images/slides/slide-image-desktop2@1x.png 1x, ./images/slides/slide-image-desktop2@2x.png 2x"
+                  type="image/png">
                 <source media="(min-width: 768px)"
-                  srcset="./images/slides/slide-image-tablet2@1x.png 1x, ./images/slides/slide-image-tablet2@2x.png 2x" type="image/png">
+                  srcset="./images/slides/slide-image-tablet2@1x.png 1x, ./images/slides/slide-image-tablet2@2x.png 2x"
+                  type="image/png">
                 <img class="promo__image" src="./images/slides/slide-image-mobile2@1x.png"
-                  srcset="./images/slides/slide-image-mobile2@2x.png 2x" width="280" height="280" alt="Напиток Лавандовый Латте.">
+                  srcset="./images/slides/slide-image-mobile2@2x.png 2x" width="280" height="280"
+                  alt="Напиток Лавандовый Латте.">
               </picture>
+              <figcaption class="visually-hidden">Напиток Лавандовый Латте.</figcaption>
             </figure>
             <div class="promo__wrapper">
               <span class="promo__new text text--uppercase">Новинка!</span>
@@ -131,12 +138,16 @@
                 <source type="image/webp"
                   srcset="./images/slides/slide-image-mobile3@1x.webp 1x, ./images/slides/slide-image-mobile3@2x.webp 2x">
                 <source media="(min-width: 1440px)"
-                  srcset="./images/slides/slide-image-desktop3@1x.png 1x, ./images/slides/slide-image-desktop3@2x.png 2x" type="image/png">
+                  srcset="./images/slides/slide-image-desktop3@1x.png 1x, ./images/slides/slide-image-desktop3@2x.png 2x"
+                  type="image/png">
                 <source media="(min-width: 768px)"
-                  srcset="./images/slides/slide-image-tablet3@1x.png 1x, ./images/slides/slide-image-tablet3@2x.png 2x" type="image/png">
+                  srcset="./images/slides/slide-image-tablet3@1x.png 1x, ./images/slides/slide-image-tablet3@2x.png 2x"
+                  type="image/png">
                 <img class="promo__image" src="./images/slides/slide-image-mobile3@1x.png"
-                  srcset="./images/slides/slide-image-mobile3@2x.png 2x" width="280" height="280" alt="Напиток Тройной Эспрессо.">
+                  srcset="./images/slides/slide-image-mobile3@2x.png 2x" width="280" height="280"
+                  alt="Напиток Тройной Эспрессо.">
               </picture>
+              <figcaption class="visually-hidden">Напиток Тройной Эспрессо.</figcaption>
             </figure>
             <div class="promo__wrapper">
               <span class="promo__new text text--uppercase">Новинка!</span>
@@ -189,7 +200,7 @@
 
       <div class="catalog__wrapper center-fixed">
 
-        <form class="catalog__form form" action="/" method="post" id="catalog" autocomplete="off">
+        <form class="catalog__form form" action="/" method="post" autocomplete="off">
           <fieldset class="form__fields range">
             <legend class="form__legends"><span>Цена</span></legend>
             <div class="range__slider">
@@ -211,7 +222,8 @@
               <span class="range__devider"></span>
               <label class="range__label">
                 <span class="visually-hidden">Максимальная цена lо</span>
-                <input class="range__input" type="number" name="max-price" value="123" min="0" max="9999999" placeholder="0">
+                <input class="range__input" type="number" name="max-price" value="123" min="0" max="9999999"
+                  placeholder="0">
                 <span class="range__mark"></span>
               </label>
             </div>
@@ -262,6 +274,7 @@
           </fieldset>
 
           <fieldset class="form__fields form__fields--buttons">
+            <legend class="visually-hidden">Кнопки управления формой.</legend>
             <button class="form__submit button" type="submit">
               <span class="button__text">Применить</span>
             </button>
@@ -299,9 +312,11 @@
                 <source type="image/webp"
                   srcset="./images/cards/card-image1@1x.webp 1x, ./images/cards/card-image1@2x.webp 2x">
                 <img class="card__image" src="./images/cards/card-image1@1x.png"
-                  srcset="./images/cards/card-image1@2x.png 2x" width="130" height="188" alt="Кофе c молоком в баночке." loading="lazy"
-                  decoding="async">
+                  srcset="./images/cards/card-image1@2x.png 2x" width="130" height="188" alt="Кофе c молоком в баночке."
+                  loading="lazy" decoding="async">
               </picture>
+              <figcaption class="visually-hidden">Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+              </figcaption>
             </figure>
             <div class="card__wrapper">
               <h3 class="card__title">Декаф Флэт Уайт</h3>
@@ -321,9 +336,11 @@
                 <source type="image/webp"
                   srcset="./images/cards/card-image2@1x.webp 1x, ./images/cards/card-image2@2x.webp 2x">
                 <img class="card__image" src="./images/cards/card-image2@1x.png"
-                  srcset="./images/cards/card-image2@2x.png 2x" width="130" height="188"  alt="Кофе c молоком в баночке." loading="lazy"
-                  decoding="async">
+                  srcset="./images/cards/card-image2@2x.png 2x" width="130" height="188" alt="Кофе c молоком в баночке."
+                  loading="lazy" decoding="async">
               </picture>
+              <figcaption class="visually-hidden">Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+              </figcaption>
             </figure>
             <div class="card__wrapper">
               <h3 class="card__title">Декаф Флэт Уайт</h3>
@@ -343,9 +360,11 @@
                 <source type="image/webp"
                   srcset="./images/cards/card-image3@1x.webp 1x, ./images/cards/card-image3@2x.webp 2x">
                 <img class="card__image" src="./images/cards/card-image3@1x.png"
-                  srcset="./images/cards/card-image3@2x.png 2x" width="130" height="188"  alt="Кофе c молоком в баночке." loading="lazy"
-                  decoding="async">
+                  srcset="./images/cards/card-image3@2x.png 2x" width="130" height="188" alt="Кофе c молоком в баночке."
+                  loading="lazy" decoding="async">
               </picture>
+              <figcaption class="visually-hidden">Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+              </figcaption>
             </figure>
             <div class="card__wrapper">
               <h3 class="card__title">Декаф Флэт Уайт</h3>
@@ -365,9 +384,11 @@
                 <source type="image/webp"
                   srcset="./images/cards/card-image4@1x.webp 1x, ./images/cards/card-image4@2x.webp 2x">
                 <img class="card__image" src="./images/cards/card-image4@1x.png"
-                  srcset="./images/cards/card-image4@2x.png 2x" width="130" height="188"  alt="Кофе c молоком в баночке." loading="lazy"
-                  decoding="async">
+                  srcset="./images/cards/card-image4@2x.png 2x" width="130" height="188" alt="Кофе c молоком в баночке."
+                  loading="lazy" decoding="async">
               </picture>
+              <figcaption class="visually-hidden">Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+              </figcaption>
             </figure>
             <div class="card__wrapper">
               <h3 class="card__title">Декаф Флэт Уайт</h3>
@@ -387,9 +408,11 @@
                 <source type="image/webp"
                   srcset="./images/cards/card-image5@1x.webp 1x, ./images/cards/card-image5@2x.webp 2x">
                 <img class="card__image" src="./images/cards/card-image5@1x.png"
-                  srcset="./images/cards/card-image5@2x.png 2x" width="130" height="188"  alt="Кофе c молоком в баночке." loading="lazy"
-                  decoding="async">
+                  srcset="./images/cards/card-image5@2x.png 2x" width="130" height="188" alt="Кофе c молоком в баночке."
+                  loading="lazy" decoding="async">
               </picture>
+              <figcaption class="visually-hidden">Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+              </figcaption>
             </figure>
             <div class="card__wrapper">
               <h3 class="card__title">Декаф Флэт Уайт</h3>
@@ -409,9 +432,11 @@
                 <source type="image/webp"
                   srcset="./images/cards/card-image6@1x.webp 1x, ./images/cards/card-image6@2x.webp 2x">
                 <img class="card__image" src="./images/cards/card-image6@1x.png"
-                  srcset="./images/cards/card-image6@2x.png 2x" width="130" height="188"  alt="Кофе c молоком в баночке." loading="lazy"
-                  decoding="async">
+                  srcset="./images/cards/card-image6@2x.png 2x" width="130" height="188" alt="Кофе c молоком в баночке."
+                  loading="lazy" decoding="async">
               </picture>
+              <figcaption class="visually-hidden">Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+              </figcaption>
             </figure>
             <div class="card__wrapper">
               <h3 class="card__title">Декаф Флэт Уайт</h3>
@@ -467,10 +492,10 @@
               srcset="./images/map/tablet@1x.webp 1x, ./images/map/tablet@2x.webp 2x">
             <source type="image/webp" srcset="./images/map/mobile@1x.webp 1x, ./images/map/mobile@2x.webp 2x">
             <source media="(min-width: 1440px)"
-              srcset="./images/map/descktop@1x.jpeg 1x, ./images/map/descktop@2x.jpeg 2x">
-            <source media="(min-width: 768px)" srcset="./images/map/tablet@1x.jpeg 1x, ./images/map/tablet@2x.jpeg 2x">
-            <img class="map__image" width="320" height="420" src="./images/map/mobile@1x.jpeg" srcset="./images/map/mobile@2x.jpeg 2x"
-              alt="Карта местоположения" loading="lazy" decoding="async">
+              srcset="./images/map/descktop@1x.jpeg 1x, ./images/map/descktop@2x.jpeg 2x" type="image/jpeg">
+            <source media="(min-width: 768px)" srcset="./images/map/tablet@1x.jpeg 1x, ./images/map/tablet@2x.jpeg 2x" type="image/jpeg">
+            <img class="map__image" width="320" height="420" src="./images/map/mobile@1x.jpeg"
+              srcset="./images/map/mobile@2x.jpeg 2x" alt="Карта местоположения" loading="lazy" decoding="async">
           </picture>
           <figcaption class="map__marker">
             Санкт-Петербург, набережная реки Карповки, дом 5
@@ -486,7 +511,8 @@
       <a class="footer__logo logo" href="#top">
         <picture>
           <source media="(min-width: 768px)" srcset="./images/logo/logo-desktop.svg" type="image/svg+xml">
-          <img class="logo__image logo__image--footer" src="./images/logo/logo-tablet.svg" width="82" height="36" alt="Логотип Drink Go">
+          <img class="logo__image logo__image--footer" src="./images/logo/logo-tablet.svg" width="82" height="36"
+            alt="Логотип Drink Go">
         </picture>
         <span class="logo__text">Интернет-магазин кофейных напитков</span>
       </a>
@@ -572,8 +598,8 @@
       </svg>
     </a>
   </footer>
-  <script src="./vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="./vendor/leaflet/leaflet.js"></script>
+  <script src="./vendor/swiper/swiper-bundle.min.js" async></script>
+  <script src="./vendor/leaflet/leaflet.js" async></script>
   <script src="scripts/index.js"></script>
 </body>
 
