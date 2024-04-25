@@ -6,6 +6,10 @@
   @media (min-width: $min-tablet) {
     width: 223px;
   }
+
+  @media (min-width: $min-desktop) {
+    width: auto;
+  }
 }
 
 .range__slider {
@@ -30,6 +34,7 @@
   background-color: $base-white;
   border: 2px solid $alt-primary-lighter;
   border-radius: 50%;
+  cursor: pointer;
 
   &--min {
     left: -1px;
@@ -37,6 +42,30 @@
 
   &--max {
     right: -9px;
+  }
+
+  &:hover {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-image: linear-gradient(to bottom, $alt-primary-opacity 50%, $alt-primary-opacity 50%);
+    outline: 1px solid $base-white;
+    outline-offset: -3px;
+  }
+
+  &:active {
+    background-color: $base-primary;
+    outline: 1px solid $base-white;
+    outline-offset: -3px;
+  }
+
+  &:focus:not(:active) {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-image: linear-gradient(to bottom, $alt-primary-opacity 50%, $alt-primary-opacity 50%);
+    outline: 1px solid $base-white;
+    outline-offset: -3px;
   }
 }
 
@@ -60,13 +89,30 @@
   line-height: 24px;
   text-align: center;
   border: 2px solid $alt-primary-lighter;
+  appearance: textfield;
 
-  &[value="0"] {
+  &::placeholder {
     color: $base-gray;
   }
 
   @media (min-width: $min-tablet) {
     width: 67px;
+  }
+
+  @media (min-width: $min-desktop) {
+    width: 114px;
+  }
+
+  &:focus {
+    border-color: $alt-primary-darker;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: $bg-lightest-grey;
+    border-color: $alt-light-grey;
+    cursor: not-allowed;
+    pointer-events: none;
   }
 }
 

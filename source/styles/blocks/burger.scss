@@ -15,9 +15,9 @@
     display: none;
   }
 
-  // &:active {
-  //   background-color: $base-secondary;
-  // }
+  &:active {
+    background-color: $base-secondary;
+  }
 }
 
 .burger__icon {

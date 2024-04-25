@@ -11,6 +11,7 @@
 
   @media (min-width: $min-desktop) {
     flex-direction: column;
+    align-items: stretch;
   }
 }
 
@@ -43,6 +44,11 @@
   }
 
   @media (min-width: $min-desktop) {
+    &:not(:nth-of-type(3)):not(.form__fields--buttons) {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+
     &--buttons {
       width: 100%;
       max-width: initial;

@@ -49,6 +49,8 @@
 
   &:disabled {
     background-color: $base-gray;
+    cursor: not-allowed;
+    pointer-events: none;
   }
 
   &--additional:disabled {

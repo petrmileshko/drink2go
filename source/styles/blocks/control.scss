@@ -72,16 +72,48 @@
     background-color: $base-primary;
   }
 
-  &:hover::before {}
-
-  .control__input:focus+&::before {}
-
-  .control__input:disabled+& {
-    color: $alt-light-grey;
+  .control--checkbox .control__input:not(:disabled)+ &:hover::before {
+    background-color: $alt-primary-opacity;
+    border: 2px solid $alt-primary-lighter;
   }
 
-  .control__input:disabled+&::before {
+  .control--radio .control__input:not(:disabled) + &:hover::before {
+    border: 2px solid $alt-primary-lighter;
+  }
+
+  .control--radio .control__input:not(:disabled) + &:hover::after {
+    background-color: $alt-primary-opacity;
+    border-radius: 50%;
+  }
+
+  .control__input:disabled + & {
+    color: $base-gray;
+    cursor: not-allowed;
+  }
+
+  .control--checkbox .control__input:disabled+&::before {
     border-color: $alt-light-grey;
+    background-color: $alt-light-grey;
+  }
+
+  .control--checkbox .control__input:checked:disabled+&::before {
+    border-color: $alt-light-grey;
+    background-color: $alt-light-grey;
+  }
+
+  .control--checkbox .control__input:checked:disabled+&::after {
+    background-color: $base-gray;
+  }
+
+  .control--radio .control__input:disabled+&::before {
+    border-color: $alt-light-grey;
+  }
+
+  .control--radio .control__input:checked:disabled+&::before {
+    border-color: $alt-light-grey;
+  }
+
+  .control--radio .control__input:checked:disabled+&::after {
     background-color: $alt-light-grey;
   }
 }
