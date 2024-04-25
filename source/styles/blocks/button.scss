@@ -14,8 +14,6 @@
   &--small {
     font-size: 14px;
     line-height: 20px;
-    background-color: $base-primary;
-    border: 1px solid $base-primary;
   }
 
   &[type="reset"] {
@@ -35,6 +33,27 @@
 
   &:focus:not(:active):not(.burger) {
     background-color: $alt-primary-lighter;
+  }
+
+  &:disabled {
+    background-color: $base-gray;
+  }
+
+  &[type="reset"]:hover {
+    color: $base-white;
+  }
+
+  &[type="reset"]:active:not(.burger) {
+    color: $base-white;
+  }
+
+  &[type="reset"]:focus:not(:active):not(.burger) {
+    color: $base-white;
+  }
+
+  &[type="reset"]:disabled {
+    color: $base-white;
+    background-color: $base-gray;
   }
 }
 
