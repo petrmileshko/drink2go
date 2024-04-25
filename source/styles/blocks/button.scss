@@ -33,6 +33,7 @@
 
   &:focus:not(:active):not(.burger) {
     background-color: $alt-primary-lighter;
+    outline: none;
   }
 
   &--additional:hover {
