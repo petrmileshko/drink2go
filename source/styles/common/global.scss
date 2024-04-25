@@ -13,13 +13,9 @@ img {
 
 :root {
   --swiper-navigation-size: 20px;
-  --swiper-navigation-sides-offset: 4px;
+  --swiper-navigation-top-offset: 10px;
+  --swiper-navigation-sides-offset: 0px;
   --swiper-navigation-color: #{$base-primary};
-
-  @media (min-width: $min-tablet) {
-    --swiper-navigation-sides-offset: 30px;
-    --swiper-navigation-top-offset: 40%;
-  }
 
   @media (min-width: $min-desktop) {
     --swiper-pagination-bullet-border-radius: 0;

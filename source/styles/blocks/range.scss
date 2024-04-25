@@ -95,6 +95,12 @@
     color: $base-gray;
   }
 
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+
   @media (min-width: $min-tablet) {
     width: 67px;
   }
