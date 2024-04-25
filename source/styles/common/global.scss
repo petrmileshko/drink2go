@@ -13,7 +13,6 @@ img {
 
 :root {
   --swiper-navigation-size: 20px;
-  --swiper-navigation-top-offset: 50%;
   --swiper-navigation-sides-offset: 4px;
   --swiper-navigation-color: #{$base-primary};
 
@@ -29,5 +28,7 @@ img {
     --swiper-pagination-bullet-height: 4px;
     --swiper-pagination-bottom: 70px;
     --swiper-pagination-bullet-inactive-color: #{$base-white};
+    --swiper-pagination-bullet-inactive-opacity: 1;
+    --swiper-pagination-color: #{$base-primary};
   }
 }

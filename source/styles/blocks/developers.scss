@@ -12,6 +12,14 @@
     min-width: 155px;
     font-size: 18px;
   }
+
+  &:hover {
+    color: $base-primary;
+  }
+
+  &:active {
+    color: $alt-primary-darker;
+  }
 }
 
 .developers__message {

@@ -29,7 +29,7 @@
   &--current {
     font-weight: $font-semi;
     color: $base-black;
-    background-color: $base-white;
+    background-color: transparent;
     cursor: none;
     pointer-events: none;
   }
@@ -51,6 +51,31 @@
       cursor: none;
       pointer-events: none;
     }
+  }
+
+  &:hover {
+    color: $base-white;
+    background-color: $alt-primary-lighter;
+  }
+
+  &:active {
+    color: $base-white;
+    background-color: $alt-primary-darker;
+  }
+
+  &:hover .pagination__button{
+    fill: $base-white;
+  }
+
+  &:active .pagination__button {
+    fill: $base-white;
+  }
+
+  &--disabled {
+    color: $base-white;
+    background-color: $alt-light-grey;
+    cursor: none;
+    pointer-events: none;
   }
 }
 

@@ -11,11 +11,6 @@
   text-align: center;
   cursor: pointer;
 
-  &--small {
-    font-size: 14px;
-    line-height: 20px;
-  }
-
   &--additional {
     color: $base-primary;
     background-color: $base-white;
@@ -50,13 +45,22 @@
 
   &:disabled {
     background-color: $base-gray;
+    border: none;
     cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  &--disabled {
+    color: $base-white;
+    background-color: $base-gray;
+    border: none;
+    cursor: none;
     pointer-events: none;
   }
 
   &--additional:disabled {
     color: $base-white;
-    background-color: $base-gray;
+    background-color: $alt-light-grey;
   }
 }
 
