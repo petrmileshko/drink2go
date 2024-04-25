@@ -4,8 +4,7 @@
   align-items: center;
 
   @media (min-width: $min-tablet) {
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: wrap;
     align-items: flex-start;
   }
 

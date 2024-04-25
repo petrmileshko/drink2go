@@ -17,10 +17,6 @@
   height: 100%;
   margin: 0;
   padding: 0;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
   background-color: $base-primary;
 
   &--nojs {
@@ -28,7 +24,6 @@
     display: flex;
     justify-content: center;
   }
-
 }
 
 .map__marker {
@@ -53,7 +48,6 @@
 }
 
 .map__leaflet {
-
   &--nojs {
     display: none;
   }
