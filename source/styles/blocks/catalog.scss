@@ -35,6 +35,10 @@
 
 .catalog__introduction {
   @include section_intro();
+
+  @media (min-width: $min-tablet) {
+    margin-bottom: 15px;
+  }
 }
 
 .catalog__form {

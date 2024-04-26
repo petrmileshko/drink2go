@@ -82,6 +82,8 @@
     order: 1;
     width: 476px;
     height: 476px;
+    margin: 0;
+    margin-top: 19px;
   }
 
   @media (min-width: $min-desktop) {
@@ -101,6 +103,10 @@
   line-height: 16px;
   color: $base-primary;
 
+  @media (min-width: $min-tablet) {
+    margin-top: 58px;
+  }
+
   @media (min-width: $min-desktop) {
     letter-spacing: 0.8px;
     text-align: left;
@@ -114,6 +120,7 @@
 
   @media (min-width: $min-tablet) {
     max-width: initial;
+    margin-bottom: 16px;
   }
 
   @media (min-width: $min-desktop) {
@@ -132,6 +139,7 @@
 
   @media (min-width: $min-tablet) {
     max-width: 608px;
+    margin-bottom: 21px;
     font-size: 20px;
     line-height: 32px;
   }

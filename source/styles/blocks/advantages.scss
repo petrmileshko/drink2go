@@ -23,7 +23,8 @@
   @media (min-width: $min-tablet) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 50px 30px;
+    gap: 37px 30px;
+    padding-left: 9px;
   }
 
   @media (min-width: $min-desktop) {
@@ -70,7 +71,17 @@
   @media (min-width: $min-tablet) {
     position: relative;
     flex-flow: wrap;
+    max-width: 339px;
     padding-left: 72px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 0;
+    }
+
+    &--ecological {
+      max-width: 269px;
+      align-items: initial;
+    }
 
     &::before {
       position: absolute;
@@ -79,7 +90,7 @@
     }
   }
 
-  @media (min-width: $min-tablet) {
+  @media (min-width: $min-desktop) {
     position: static;
     flex-direction: column;
     max-width: 318px;

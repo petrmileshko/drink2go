@@ -7,6 +7,15 @@
 
   @media (min-width: $min-tablet) {
     padding: 60px 0 100px;
+
+    &.advantages {
+      padding-bottom: 91px;
+    }
+
+    &.catalog {
+      padding-top: 79px;
+    }
+
   }
 
   @media (min-width: $min-desktop) {

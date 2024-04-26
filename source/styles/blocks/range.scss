@@ -18,6 +18,11 @@
   height: 2px;
   margin-bottom: 35px;
   background-color: $alt-light-grey;
+
+  @media (min-width: $min-tablet) {
+    margin-top: 9px;
+    margin-bottom: 30px;
+  }
 }
 
 .range__bar {
@@ -98,7 +103,7 @@
   }
 
   @media (min-width: $min-tablet) {
-    width: 67px;
+    width:  86px;
   }
 
   @media (min-width: $min-desktop) {
