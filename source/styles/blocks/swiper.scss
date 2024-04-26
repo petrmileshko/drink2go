@@ -52,6 +52,10 @@
   }
 
   @media (min-width: $min-desktop) {
+    &::after {
+      margin-top: initial;
+    }
+
     &:active {
       background: linear-gradient(90deg, rgba(120, 89, 207, 0.25), rgba(120, 89, 207, 0) 100%);
     }
@@ -81,6 +85,10 @@
   }
 
   @media (min-width: $min-desktop) {
+    &::after {
+      margin-top: initial;
+    }
+
     &:active {
       background: linear-gradient(270deg, rgba(120, 89, 207, 0.25), rgba(120, 89, 207, 0) 100%);
     }
