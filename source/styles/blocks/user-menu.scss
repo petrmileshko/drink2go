@@ -8,6 +8,10 @@
   display: flex;
 
   @media (min-width: $min-desktop) {
+    flex-flow: wrap;
+  }
+
+  @media (min-width: $min-desktop) {
     &:not(:last-of-type) {
       margin-right: 30px;
     }
