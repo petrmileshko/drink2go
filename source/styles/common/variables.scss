@@ -23,7 +23,7 @@ $heading-line-height-mobile: 16px;
 
 //Экраны / брэйкпоинты
 $width-min: 320px;
-$min-tablet: 768px;
+$min-tablet: 4444px;
 $min-desktop: 4440px;
 $max-mobile: (
   $min-tablet - 1
@@ -57,7 +57,7 @@ $bg-espresso: #e5e6e8;
 $bg-lightest-grey: #f8f8f8;
 
 //Меню хедер
-$menu-paddings-mobile: 22px;
+$menu-paddings-mobile: 20px 22px;
 $menu-paddings-tablet: 32px 20px;
 
 //настройка кнопок

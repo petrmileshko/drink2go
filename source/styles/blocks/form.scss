@@ -76,6 +76,12 @@
   font-weight: $font-semi;
   font-size: 16px;
   line-height: 24px;
+
+  @media (max-width: $max-tablet) {
+    &--range {
+      margin-bottom: 30px;
+    }
+  }
 }
 
 .form__labels {
