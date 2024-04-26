@@ -4,6 +4,7 @@
   list-style-type: none;
 
   &--nojs {
+    grid-column: 1 / -1;
     display: flex;
     flex-direction: column;
   }
@@ -21,11 +22,19 @@
   @media (min-width: $min-tablet) {
     display: flex;
     flex-flow: wrap;
+
+    &--nojs {
+      grid-column: initial;
+    }
   }
 }
 
 .menu__item {
   min-width: $width-min;
+
+  .menu--nojs & {
+    min-width: initial;
+  }
 
   @media (max-width: $max-tablet) {
     border-top: 1px solid $base-secondary;
