@@ -15,6 +15,7 @@
   line-height: $line-height-mobile;
   color: $text-primary;
   background-color: $bg-primary;
+  overflow-wrap: anywhere;
 
   @media (min-width: $min-tablet) {
     font-size: $font-size-tablet;
