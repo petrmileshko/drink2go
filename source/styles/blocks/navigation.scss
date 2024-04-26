@@ -4,11 +4,11 @@
   width: 100%;
 
   @media (min-width: $min-tablet) {
-    grid-template-columns: 170px 460px 1fr;
+    grid-template-columns: 152px 460px 1fr;
   }
 
   @media (min-width: $min-desktop) {
-    grid-template-columns: 518px 621px 1fr;
+    grid-template-columns: 478px 621px 1fr;
   }
 }
 

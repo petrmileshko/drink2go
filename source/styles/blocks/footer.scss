@@ -5,7 +5,7 @@
   @media (min-width: $min-tablet) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 12px 30px;
   }
 
   @media (min-width: $min-desktop) {
@@ -17,7 +17,8 @@
 
 .footer__section {
   position: relative;
-  padding: 20px 0;
+  padding-top: 17px;
+  padding-bottom: 23px;
 
   &::before {
     position: absolute;
@@ -40,6 +41,8 @@
   }
 
   @media (min-width: $min-tablet) {
+    padding-bottom: 18px;
+
     &:last-of-type::after {
       content: none;
     }
@@ -47,6 +50,10 @@
     &::before {
       content: none;
     }
+  }
+
+  @media (min-width: $min-desktop) {
+    padding-top: 31px;
   }
 }
 
@@ -57,6 +64,7 @@
   @media (min-width: $min-tablet) {
     grid-column: 1 / -1;
     grid-row: 1 / 2;
+    padding-bottom: 0;
   }
 
   @media (min-width: $min-desktop) {
@@ -77,6 +85,14 @@
   }
 }
 
+.footer__heading {
+  margin: 0 0 12px;
+  font-weight: $font-bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: $base-primary;
+}
+
 .footer__menu {
   margin: 0;
   padding: 0;
@@ -89,15 +105,11 @@
 }
 
 .footer__developers {
-  margin-top: 14px;
+  margin-top: 2px;
 
   @media (min-width: $min-tablet) {
     grid-column: 1 / -1;
     grid-row: 3 / 4;
-    margin-top: 8px;
-  }
-
-  @media (min-width: $min-desktop) {
     margin-top: 0;
   }
 }
