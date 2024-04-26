@@ -75,7 +75,7 @@
 
   @media (min-width: $min-tablet) {
     position: relative;
-    flex-flow: wrap;
+    align-items: flex-start;
     max-width: 339px;
     padding-left: 72px;
 
@@ -84,7 +84,7 @@
     }
 
     &--ecological {
-      max-width: 269px;
+      max-width: 274px;
       align-items: initial;
     }
 
@@ -98,6 +98,7 @@
   @media (min-width: $min-desktop) {
     position: relative;
     flex-direction: column;
+    align-items: center;
     max-width: 318px;
     padding-left: initial;
     padding-top: 77px;
