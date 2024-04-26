@@ -41,11 +41,21 @@
     color: inherit;
   }
 
+  &--phone {
+    padding-top: 3px;
+  }
+
   &--location::before {
     background-image: url("../../icons/icon-location.svg");
   }
 
   &--phone::before {
     background-image: url("../../icons/icon-phone.svg");
+  }
+
+  @media (min-width: $min-tablet) {
+    &--phone {
+      padding-top: 0;
+    }
   }
 }
