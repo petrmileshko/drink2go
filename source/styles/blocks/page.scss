@@ -33,13 +33,13 @@
 }
 
 .page__footer {
-  padding: 0;
+  padding-bottom: 30px;
 
   @media (min-width: $min-tablet) {
-    padding: 20px 0;
+    padding: 20px 0 40px;
   }
 
   @media (min-width: $min-desktop) {
-    padding: 18px 0 10px;
+    padding: 18px 0 40px;
   }
 }
