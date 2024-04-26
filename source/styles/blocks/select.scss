@@ -13,7 +13,7 @@
   padding: 4px 0 4px 10px;
   border-radius: 4px;
   color: $base-primary;
-  cursor: default;
+  cursor: pointer;
   user-select: none;
 
   &::after {
@@ -70,9 +70,10 @@
   &--active {
     color: $base-white;
     background-color: $base-primary;
+    cursor: auto;
   }
 
-  &:hover {
+  &:hover:not(.select__option--active) {
     background-color: $base-secondary;
   }
 
