@@ -76,7 +76,7 @@
   width: 280px;
   height: 280px;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 2px;
 
   @media (min-width: $min-tablet) {
     order: 1;
@@ -125,7 +125,7 @@
 .promo__description {
   max-width: 280px;
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   font-size: 14px;
   line-height: 20px;
   font-weight: $font-regular;
