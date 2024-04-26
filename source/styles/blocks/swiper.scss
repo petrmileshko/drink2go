@@ -3,6 +3,12 @@
   height: 100%;
 }
 
+.swiper-wrapper {
+  &--nojs {
+    flex-flow: wrap;
+  }
+}
+
 .swiper-slide {
   min-height: 656px;
   text-align: center;
