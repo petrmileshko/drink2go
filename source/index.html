@@ -22,7 +22,7 @@
 
 <body class="page__body">
   <header class="page__header center-fixed" id="top">
-    <nav class="navigation">
+    <nav class="navigation navigation--nojs">
       <span class="navigation__logo logo">
         <picture>
           <source media="(min-width: 1440px)" srcset="./images/logo/logo-desktop.svg" type="image/svg+xml">
@@ -66,7 +66,7 @@
     <h1 class="visually-hidden">Интернет-магазин кофейных напитков</h1>
     <header class="index__header promo">
       <div class="promo__slider swiper">
-        <ul class="promo__list swiper-wrapper">
+        <ul class="promo__list swiper-wrapper swiper-wrapper--nojs">
           <li class="promo__item promo__item--decaf swiper-slide">
             <figure class="promo__image-container">
               <picture>
@@ -508,10 +508,12 @@
               srcset="./images/map/mobile@2x.jpeg 2x" alt="Карта местоположения" loading="lazy" decoding="async">
           </picture>
           <figcaption class="map__marker">
-            Санкт-Петербург, набережная реки Карповки, дом 5
+            <span class="visually-hidden">Санкт-Петербург, набережная реки Карповки, дом 5</span>
           </figcaption>
         </figure>
-        <div class="map__leaflet map__leaflet--nojs" style="width: 320px; height: 420px;" id="map"></div>
+        <div class="map__leaflet map__leaflet--nojs" style="width: 320px; height: 420px;" id="map">
+          <span class="visually-hidden">Местоположение офиса магазина на карте по адресу Санкт-Петербург, набережная реки Карповки, дом 5</span>
+        </div>
       </div>
     </footer>
   </main>

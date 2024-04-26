@@ -3,6 +3,10 @@
   grid-template-columns: 120px 120px 1fr;
   width: 100%;
 
+  &--nojs {
+    grid-template-columns: 1fr 1fr;
+  }
+
   @media (min-width: $min-tablet) {
     grid-template-columns: 152px 460px 1fr;
   }
