@@ -4,14 +4,9 @@
   list-style-type: none;
 }
 
-.footer__heading {
-  margin: 0 0 12px;
-  color: $base-primary;
-}
-
 .footer-menu__link {
   display: block;
-  padding: 8px;
+  padding: 8px 8px 11px 0px;
 
   &:hover {
     color: $alt-primary-lighter;
@@ -41,6 +36,8 @@
     position: relative;
     display: flex;
     padding-left: 19px;
+    font-size: 14px;
+    line-height: 20px;
     color: inherit;
   }
 

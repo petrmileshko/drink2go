@@ -29,19 +29,15 @@
 .range__pin {
   position: absolute;
   top: -9px;
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   background-color: $base-white;
   border: 2px solid $alt-primary-lighter;
   border-radius: 50%;
   cursor: pointer;
 
-  &--min {
-    left: -1px;
-  }
-
   &--max {
-    right: -9px;
+    right: -10px;
   }
 
   &:hover {

@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 20px 20px;
+  padding: 40px 21px 20px;
   background-color: $base-white;
 
   @media (min-width: $min-tablet) {
@@ -54,7 +54,7 @@
 
 .card__description {
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 13px;
 
   @media (min-width: $min-tablet) {
     margin-bottom: 20px;
