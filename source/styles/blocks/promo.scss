@@ -21,8 +21,15 @@
 .promo__wrapper {
   display: flex;
   flex-direction: column;
+  max-width: 280px;
+
+  @media (min-width: $min-tablet) {
+    max-width: 608px;
+    padding-top: 123px;
+  }
 
   @media (min-width: $min-desktop) {
+    max-width: initial;
     padding-top: 123px;
   }
 }
@@ -166,6 +173,7 @@
 }
 
 .promo__order {
+  max-width: 114px;
   min-width: 113px;
   min-height: 40px;
   letter-spacing: 0;

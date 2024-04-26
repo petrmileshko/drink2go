@@ -48,7 +48,6 @@
     &::after {
       margin-top: -191px;
     }
-
   }
 
   @media (min-width: $min-desktop) {
@@ -102,6 +101,7 @@
 }
 
 .swiper-pagination-bullet {
+
   &:hover {
     background-color: $alt-primary-opacity;
   }

@@ -25,6 +25,7 @@
   text-decoration: none;
   color: $base-primary;
   background-color: $base-white;
+  overflow: hidden;
 
   &--current {
     font-weight: $font-semi;

@@ -2,11 +2,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 280px;
   padding: 40px 21px 20px;
   background-color: $base-white;
 
   @media (min-width: $min-tablet) {
+    max-width: 349px;
     padding: 50px 30px 30px;
+  }
+
+  @media (min-width: $min-desktop) {
+    max-width: 317px;
   }
 }
 
