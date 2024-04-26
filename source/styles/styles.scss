@@ -1,12 +1,12 @@
+/* Vendor */
+@import "../vendor/leaflet/leaflet.css";
+@import "../vendor/swiper/swiper-bundle.min.css";
+
 /* GLOBAL */
 @import "./common/variables.scss";
 @import "./common/global.scss";
 @import "./common/fonts.scss";
 @import "./common/mixins.scss";
-
-/* Vendor */
-@import "../vendor/leaflet/leaflet.css";
-@import "../vendor/swiper/swiper-bundle.min.css";
 
 /* BLOCKS */
 @import "./blocks/center-fixed.scss";

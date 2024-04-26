@@ -2,6 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  font-size: 12px;
+  line-height: 16px;
   color: inherit;
   text-decoration: none;
 }
@@ -34,17 +36,24 @@
     margin-right: 20px;
 
     &--footer {
-      margin-right: 76px;
+      margin-right: 115px;
+      margin-bottom: 10px;
     }
   }
 }
 
 .logo__text {
   display: none;
-  font-size: $font-size-mobile;
-  line-height: $line-height-mobile;
 
   @media (min-width: $min-desktop) {
     display: block;
+  }
+
+  @media (min-width: $min-desktop) {
+    &--footer {
+      max-width: 286px;
+      font-size: 14px;
+      line-height: 20px;
+    }
   }
 }

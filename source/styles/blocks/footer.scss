@@ -51,6 +51,10 @@
       content: none;
     }
   }
+
+  @media (min-width: $min-desktop) {
+    padding-top: 31px;
+  }
 }
 
 .footer__wrapper {
