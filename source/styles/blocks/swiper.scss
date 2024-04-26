@@ -44,6 +44,11 @@
 
   @media (min-width: $min-tablet) {
     width: 80px;
+
+    &::after {
+      margin-top: -191px;
+    }
+
   }
 
   @media (min-width: $min-desktop) {
@@ -69,6 +74,10 @@
 
   @media (min-width: $min-tablet) {
     width: 80px;
+
+    &::after {
+      margin-top: -191px;
+    }
   }
 
   @media (min-width: $min-desktop) {
