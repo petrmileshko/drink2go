@@ -25,7 +25,6 @@
 
   @media (min-width: $min-tablet) {
     max-width: 608px;
-    padding-top: 123px;
   }
 
   @media (min-width: $min-desktop) {
@@ -130,11 +129,11 @@
   @media (min-width: $min-tablet) {
     max-width: initial;
     margin-bottom: 16px;
+    letter-spacing: 1px;
   }
 
   @media (min-width: $min-desktop) {
     margin-bottom: 16px;
-    letter-spacing: 1px;
     text-align: left;
   }
 }
