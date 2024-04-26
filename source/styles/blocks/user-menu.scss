@@ -1,15 +1,12 @@
 .user-menu {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   list-style-type: none;
 }
 
 .user-menu__item {
   display: flex;
-
-  @media (min-width: $min-desktop) {
-    flex-flow: wrap;
-  }
 
   @media (min-width: $min-desktop) {
     &:not(:last-of-type) {

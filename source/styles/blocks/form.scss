@@ -77,9 +77,9 @@
   font-size: 16px;
   line-height: 24px;
 
-  @media (max-width: $max-tablet) {
+  @media (max-width: $max-mobile) {
     &--range {
-      margin-bottom: 21px;
+      margin-bottom: 31px;
     }
   }
 }
