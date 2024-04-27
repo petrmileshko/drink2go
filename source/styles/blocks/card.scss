@@ -63,6 +63,10 @@
   margin-bottom: 16px;
 
   @media (min-width: $min-tablet) {
+    margin-bottom: 18px;
+  }
+
+  @media (min-width: $min-desktop) {
     margin-bottom: 20px;
   }
 }
