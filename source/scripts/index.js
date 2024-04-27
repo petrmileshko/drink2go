@@ -1,4 +1,6 @@
-/* в этот файл добавляет скрипты*/
+/* в этот файл добавляет скрипты
+ Милешко Петр
+*/
 import {
   onLoadJs
 } from './utils/utils.js';
@@ -37,6 +39,7 @@ menuMobile({
   activation: 'menu__link--current'
 })();
 
+// Подключение слайдера
 const swiper = new Swiper('.promo__slider', {
   loop: false,
   navigation: {
@@ -49,6 +52,7 @@ const swiper = new Swiper('.promo__slider', {
   },
 });
 
+// Подключение интерактивных карт
 const map = L.map('map', {
   center: [59.96831, 30.31748],
   zoomControl: false,

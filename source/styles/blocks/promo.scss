@@ -1,15 +1,5 @@
 .promo {
-  width: $width-min;
-  margin-left: auto;
-  margin-right: auto;
-
-  @media (min-width: $min-tablet) {
-    width: $min-tablet;
-  }
-
-  @media (min-width: $min-desktop) {
-    width: $min-desktop;
-  }
+  width: 100vw;
 }
 
 .promo__list {

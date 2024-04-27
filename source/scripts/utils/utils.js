@@ -1,4 +1,4 @@
-/**
+/** Милешко Петр
  *  Функция для удаления класса у элемента
  * @param {object} element
  * @param {string} selector
