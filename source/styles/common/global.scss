@@ -27,4 +27,8 @@ img {
     --swiper-pagination-bullet-inactive-opacity: 1;
     --swiper-pagination-color: #{$base-primary};
   }
+
+  @media (min-width: $more-desktop) {
+    --swiper-navigation-sides-offset: 9%;
+  }
 }

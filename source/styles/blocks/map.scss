@@ -61,18 +61,18 @@
 }
 
 .map__leaflet {
+  width: 100vw !important;    // переопределение инлайновых стилей карты
+                              // для адаптации размера карты под ширину контейнера
   &--nojs {
     display: none;
   }
 
   @media (min-width: $min-tablet) {
-    width: 768px !important;    // переопределение инлайновых стилей карты
-    height: 480px !important;   // для адаптации размера карты под ширину контейнера
+    height: 480px !important;   // переопределение инлайновых стилей карты
   }
 
   @media (min-width: $min-desktop) {
-    width: 1440px !important;   // для адаптации размера карты под ширину контейнера
-    height: 540px !important;   // переопределение инлайновых стилей карты
+    height: 540px !important;   // для адаптации размера карты под ширину контейнера
   }
 }
 
